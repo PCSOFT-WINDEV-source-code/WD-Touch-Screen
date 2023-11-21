@@ -1,0 +1,474 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pRoll
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x16a625e6060034c9
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAC/MYxz3oPbKFiC5TDzYJi7k7rbUp/woy6Z+ttLcoNh639zbaToKWrYtvHrLoaDdLOouQlgsDFAUhDg+NT/jAl1fnHO2IInVpc=
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      CONSTANT
+      	// The column will be anchored in width
+      	rollAnchorWidth	= 0x1
+      	
+      	// The column will have a fixed size
+      	rollFixedSize		= 0x2
+      	
+      	// Infinite column
+      	rollInfinire			= 0x8
+      END
+      
+      CONSTANT
+      	
+      	// Search on the stored values
+      	rccStoredValue	= 1
+      	
+      	// Search on the displayed values
+      	rccDisplayedValue	= 2
+      END
+     type : 720896
+  procedures :
+   -
+     name : RollColumnAdd
+     procedure_id : 1632033584841831625
+     type_code : 15
+     code : |1-
+      // Summary: Adds a column to the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnAdd (<Roll>, <sName> is string [, <nAnchor> is int [, <nSize> is int]])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sName (string): Name of the column to create
+      //	nAnchor (integer - default value=10): Anchor to apply
+      //	nSize (integer - default value=252): Size of the column if the anchor is fixed
+      // Return value:
+      // 	Undefined type: True if the column was created, False otherwise
+      //
+      PROCEDURE RollColumnAdd(Roller, LOCAL sName is string <useful>, LOCAL nAnchoring is int <useful> = rollAnchorWidth, LOCAL nSize is int <useful> = 252)
+      RESULT Roller.ColumnAdd(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnAddRow
+     procedure_id : 1632033584841897161
+     type_code : 15
+     code : |1-
+      // Summary: Adds a row into a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnAddRow (<Roll>, <sColumn> is string, <sDisplayedValue> is string [, <vStoredValue> is variant])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Column into which a row must be added
+      //	sDisplayedValue (string): Displayed value
+      //	vStoredValue (variant - default value=0): Stored value
+      // Return value:
+      // 	Undefined type: Subscript of the row added into the column or -1 if an error occurred
+      //
+      PROCEDURE RollColumnAddRow(Roller, LOCAL sColumn is string <useful>, LOCAL sDisplayedValue is string <useful>, LOCAL vStoredValue is variant <useful> = Null)
+      RESULT Roller.ColumnAddRow(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowOccurrence
+     procedure_id : 1632033584841962697
+     type_code : 15
+     code : |1-
+      // Summary: Returns the number of rows found in a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnRowOccurrence (<Roll>, <sColumn> is string)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	Undefined type: Number of rows in the column or -1 if an error occurred
+      //
+      PROCEDURE RollColumnRowOccurrence(Roller, LOCAL sColumn is string <useful>)
+      RESULT Roller.ColumnRowOccurrence(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnList
+     procedure_id : 1632033584842028233
+     type_code : 15
+     code : |1-
+      // Summary: Returns the list of columns for the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnList (<Roll>)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      // Return value:
+      // 	Undefined type: List of columns in the following format: <Name Column 1> [CR <Name Column 2> ... [CR <Name Column N>]]
+      //
+      PROCEDURE RollColumnList(Roller)
+      RESULT Roller.ColumnList()
+     type : 458752
+   -
+     name : RollColumnModify
+     procedure_id : 1632033584842093769
+     type_code : 15
+     code : |1-
+      // Summary: Deletes a column from the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnModify (<Roll>, <sColumn> is string, <nAnchor> is int [, <nSize> is int])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column to delete
+      //	nAnchor (integer): Type of anchor (crtAnchorRight, crtFixedSize)
+      //	nSize (integer - default value=0): Size of the column if the anchor is fixed
+      // Return value:
+      // 	Undefined type: True if the column was deleted, False otherwise
+      //
+      PROCEDURE RollColumnModify(Roller, LOCAL sColumn is string <useful>, LOCAL nAnchoring is int <useful>, LOCAL nSize is int <useful> = 0)
+      RESULT Roller.ColumnModify(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnModifyRow
+     procedure_id : 1632033584842159305
+     type_code : 15
+     code : |1-
+      // Summary: Adds a row into a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnModifyRow (<Roll>, <sColumn> is string, <nRow> is int [, <sDisplayedValue> is string [, <vStoredValue> is variant]])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Column in which a row must be modified
+      //	nRow (integer): Number of the row to modify
+      //	sDisplayedValue (string - default value=""): New displayed value
+      //	vStoredValue (variant - default value=0): New stored value
+      // Return value:
+      // 	Undefined type: True if the row was modified, False otherwise
+      //
+      PROCEDURE RollColumnModifyRow(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>, LOCAL sDisplayedValue is string <useful> = ESC, LOCAL vStoredValue is variant <useful> = Null)
+      RESULT Roller.ColumnModifyRow(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnOccurrence
+     procedure_id : 1632033584842224841
+     type_code : 15
+     code : |1-
+      // Summary: Returns the number of columns found in the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnOccurrence (<Roll>)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      // Return value:
+      // 	Undefined type: Number of columns
+      //
+      PROCEDURE RollColumnOccurrence(Roller)
+      RESULT Roller.ColumnOccurrence()
+     type : 458752
+   -
+     name : RollFontColumn
+     procedure_id : 1632033584842290377
+     type_code : 15
+     code : |1-
+      // Summary: Applies a character font to a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnFont (<Roll>, <sColumn> is string, <fntFont> is font)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	fntFont (font): New font
+      // Return value:
+      // 	Undefined type: True if the font was modified, False otherwise
+      //
+      PROCEDURE RollFontColumn(Roller, LOCAL sColumn is string <useful>, LOCAL fntFont is font <useful>)
+      RESULT Roller.ColumnFont(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollFontColumn
+     procedure_id : 1632033584842290377
+     type_code : 15
+     code : |1-
+      // Summary: Returns the character font for a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnFont (<Roll>, <sColumn> is string)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	Undefined type: Font of the column or Null if an error occurred
+      //
+      PROCEDURE RollFontColumn(Roller, LOCAL sColumn is string <useful>)
+      RESULT Roller.ColumnFont(MyParameters[2 TO])
+     type : 458753
+   -
+     name : RollColumnDelete
+     procedure_id : 1632033584842355913
+     type_code : 15
+     code : |1-
+      // Summary: Deletes a column from the roll of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnDelete (<Roll>, <sName> is string)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sName (string): Name of the column to delete
+      // Return value:
+      // 	Undefined type: True if the column was deleted, False otherwise
+      //
+      PROCEDURE RollColumnDelete(Roller, LOCAL sName is string <useful>)
+      RESULT Roller.ColumnDelete(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnDeleteRow
+     procedure_id : 1632033584842421449
+     type_code : 15
+     code : |1-
+      // Summary: Deletes a row from a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnDeleteRow (<Roll>, <sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Column into which a row must be added
+      //	nRow (integer): Row to delete
+      // Return value:
+      // 	Undefined type: True if the row was deleted, False otherwise
+      //
+      PROCEDURE RollColumnDeleteRow(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>)
+      RESULT Roller.ColumnDeleteRow(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnDeleteAll
+     procedure_id : 1632033584842486985
+     type_code : 15
+     code : |1-
+      // Summary: Deletes all the columns from the specified roll
+      // Syntax:
+      //RollColumnDeleteAll (<Roll>)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      // Return value:
+      // 	None
+      //
+      PROCEDURE RollColumnDeleteAll(Roller)
+      Roller.ColumnDeleteAll()
+     type : 458752
+   -
+     name : RollColumnDeleteAllRows
+     procedure_id : 1632033584842552521
+     type_code : 15
+     code : |1-
+      // Summary: Deletes all the rows from a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnDeleteAllrows (<Roll>, <sColumn> is string)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Column to clear
+      // Return value:
+      // 	Undefined type:  True if the deletion was performed, False otherwise
+      //
+      PROCEDURE RollColumnDeleteAllRows(Roller, LOCAL sColumn is string <useful>)
+      RESULT Roller.ColumnDeleteAllRows(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowSelect
+     procedure_id : 1632033584842618057
+     type_code : 15
+     code : |1-
+      // Summary: Modifies the selected row in a column of the specified roll
+      // Syntax:
+      //RollColumnRowSelect (<Roll>, <sColumn> is string, <nRow> is int [, <bAnimation> is boolean])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the selected row
+      //	bAnimation (boolean - default value=0): <specify the role of bAnimation>
+      // Return value:
+      // 	None
+      //
+      PROCEDURE RollColumnRowSelect(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>, LOCAL bAnimation is boolean <useful> = False)
+      Roller.ColumnRowSelect(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowSelect
+     procedure_id : 1632033584842618057
+     type_code : 15
+     code : |1-
+      // Summary: Returns the selected row in a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnSelectedRow (<Roll>, <sColumn> is string)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	Undefined type: Number of the selected row
+      //
+      PROCEDURE RollColumnRowSelect(Roller, LOCAL sColumn is string <useful>)
+      RESULT Roller.ColumnRowSelect(MyParameters[2 TO])
+     type : 458753
+   -
+     name : RollEnableSound
+     procedure_id : 1632033584842683593
+     type_code : 15
+     code : |1-
+      // Summary: Enables/Disables the sound effects for the specified roll
+      // Syntax:
+      //RollEnableSound (<Roll> [, <bActive> is boolean])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	bActive (boolean - default value=1): True if the sound effects must be enabled, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE RollEnableSound(Roller, bEnabled is boolean <useful> = True)
+      Roller.EnableSound(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowStatus
+     procedure_id : 1632033584842749129
+     type_code : 15
+     code : |1-
+      // Summary: Modifies the status of a row
+      // Syntax:
+      //RollColumnRowStatus (<Roll>, <sColumn> is string, <nRow> is int, <nStatus> is int)
+      //
+      // Parameters:
+      // 	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      //	nStatus (integer): New status (Active, Inactive)
+      // Return value:
+      // 	None
+      //
+      PROCEDURE RollColumnRowStatus(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>, LOCAL nStatus is int <useful>)
+      Roller.ColumnRowStatus(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowStatus
+     procedure_id : 1632033584842749129
+     type_code : 15
+     code : |1-
+      // Summary: Retrieves the status of a row
+      // Syntax:
+      //RollColumnRowStatus (<Roll>, <sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      // 	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      // Return value:
+      // 	integer: status of the row (Active, Inactive) or -1 if an error occurred
+      //
+      PROCEDURE RollColumnRowStatus(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>)
+      RESULT Roller.ColumnRowStatus(MyParameters[2 TO])
+     type : 458753
+   -
+     name : RollSelectionCallback
+     internal_properties : CAAAAAgAAAAalQbQvMY68QSky7GGCBPKrRJmIi5lqbamaChJIbaaH/AVu7IJABSRPhbi6NZEIRoWrk77JrRZc3ZC+YYEArTFpW4wzKDEq9Z0LP7ZIf4NvnNo2KbqH8xrOVZhSWSBEbTQByiMcQKu6T3w67TFfaABNnzyv1ny9Rrd0rHlukIa098RyXtIuyL/lTpMzMHNSKj6lKdG2fI=
+     procedure_id : 1632033584842814665
+     type_code : 15
+     code : |1-
+      // Summary: Modifies the WLanguage user procedure that will be run when performing a selection in the roll
+      // Syntax:
+      //RollSelectionCallback (<Roll>, <pSelectionProcedure> is procedure)
+      //
+      // Parameters:
+      // 	Roll: Name of the roll (without quotes)
+      //	pSelectionProcedure (procedure): Name of the procedure that will be urn when performing a selection (without quotes) or Null to cancel the callback
+      // Return value:
+      // 	None
+      //
+      // Notes:
+      // The procedure must have the following prototype:
+      // PROCEDURE <My procedure> (LOCAL sColumnName is string, LOCAL nRow is int)
+      // with:
+      //  sColumnName (string): Name of the column on which the selection is performed
+      //  nRow (integer): Subscript of the selected row in the column
+      //
+      PROCEDURE RollSelectionCallback(Roller, pSelectionProcedure is PROCEDURE)
+      Roller.SelectionCallbackDefine(pSelectionProcedure)
+     type : 458752
+   -
+     name : RollColumnRowStoredValue
+     procedure_id : 1632033584842880201
+     type_code : 15
+     code : |1-
+      // Summary: Retrieves the stored value of a column row for the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnRowStoredValue (<Roll>, <sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      // Return value:
+      // 	Undefined type: Stored value
+      //
+      PROCEDURE RollColumnRowStoredValue(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>)
+      RESULT Roller.ColumnRowStoredValue(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnRowDisplayedValue
+     procedure_id : 1632033584842945737
+     type_code : 15
+     code : |1-
+      // Summary: Retrieves the displayed value of a column row for the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnRowDisplayedValue (<Roll>, <sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      // Return value:
+      // 	Undefined type: Displayed value
+      //
+      PROCEDURE RollColumnRowDisplayedValue(Roller, LOCAL sColumn is string <useful>, LOCAL nRow is int <useful>)
+      RESULT Roller.ColumnRowDisplayedValue(MyParameters[2 TO])
+     type : 458752
+   -
+     name : RollColumnFind
+     procedure_id : 1632033584843011273
+     type_code : 15
+     code : |1-
+      // Summary: Finds a value in a column of the specified roll
+      // Syntax:
+      //[ <Result> = ] RollColumnFind (<Roll>, <sColumn> is string, <vSearch> [, <bIdenticalSearch> is boolean [, <nSearchType> is int [, <nStart> is int]]])
+      //
+      // Parameters:
+      //	Roll: Name of the roll (without quotes)
+      //	sColumn (string): Name of the column
+      //	vSearch: Element to find
+      //	bIdenticalSearch (boolean - default value=1): True to perform an exact-match search, False to perform a generic search
+      //	nSearchType (integer): Type of search (crrStoredValue to perform a search on the stored values, crrDisplayedValue to perform a search on the captions)
+      //	nStart (integer - default value=1): Start subscript
+      // Return value:
+      // 	Undefined type: Subscript of the sought value of -1 if the value was not found
+      //
+      PROCEDURE RollColumnFind(Roller, LOCAL sColumn is string <useful>, LOCAL vSearch <useful>, LOCAL bExactMatchSearch is boolean <useful> = True, LOCAL nRequestedType is int <useful> = rccStoredValue, LOCAL nStart is int <useful> = 1)
+      RESULT Roller.ColumnFind(MyParameters[2 TO])
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1e7372471cf8323c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

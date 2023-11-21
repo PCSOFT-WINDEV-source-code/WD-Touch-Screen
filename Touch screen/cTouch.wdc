@@ -1,0 +1,781 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cTouch
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16a625eb06bc498a
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      cTouch is Class
+      	m_sNameDestinationControl is string // Destination Control (window+control)
+      	m_sNameControlOnly is string // Name of the control
+      	m_sWindowName is string // Name of the window
+      	m_sNameKeyboardWindow is string	// Name of the "keyboard" window
+      	
+      	m_bUppercaseKey is boolean // True if CapsLock key, False otherwise
+      	m_bShiftKey is boolean // True if Shift key, False otherwise
+      	m_bCTRLKey is boolean // True if Ctrl key, False otherwise
+      	m_bALTKey is boolean // True if Alt key, False otherwise
+      	
+      	m_nCursorPos is int // Position of the cursor
+      	m_nPosEndCursor is int // Position of the end cursor
+      	
+      	m_clKeyboardKey is CKeyboardKeys
+      	
+      	m_bActivePoint is boolean // TRUE if the "." key was previously pressed (for the numeric keyboard)
+      	m_sDecimalSeparator is string // Character for separating the decimals (for the numeric keyboard)
+      	m_nNbSignificantZero is int // Number of significant zeros (for the numeric keyboard)
+      END
+      
+      CONSTANT
+      	WM_LBUTTONUP = 514
+      	WM_KEYDOWN = 0x0100
+      	WM_SYSCOMMAND = 0x0112
+      	SC_TASKLIST = 0xF130
+      	WM_CHAR = 0x0102
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1632033606328994186
+     type_code : 27
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Constructor (<sControl> is string, <sKeyboardWindow> is string)
+      //
+      // Parameters:
+      //	sControl (ANSI string): <specify the role of sConstrol>
+      //	sKeyboardWindow (ANSI string): <specify the role of sKeyboardWindow>
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Constructor(LOCAL sControl is string, LOCAL sKeyboardWindow is string)
+      
+      // Initializes the members of the class
+      :m_bUppercaseKey = False
+      :m_bShiftKey = False
+      :m_bCTRLKey = False
+      :m_bALTKey = False
+      
+      :m_sNameDestinationControl = sControl
+      :m_sWindowName = ExtractString(sControl, 1, ".")
+      :m_sNameControlOnly = ExtractString(sControl, 2, ".")
+      :m_sNameKeyboardWindow = sKeyboardWindow
+      
+      :m_bActivePoint = False
+      :m_sDecimalSeparator = "."
+      :m_nNbSignificantZero = 0
+      
+      // Initialize the events
+      Event(cTouch::EvClick, WinInput()+".*", ::WM_LBUTTONUP)
+      Event(cTouch::MoveKeyboard, WinInput(), 0x0084)
+      
+      // Modifies the display
+      :ModifyDisplay()
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1632033606329059722
+     type_code : 28
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Destructor ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+     type : 655360
+   -
+     name : ALT
+     procedure_id : 1632033606329125258
+     type_code : 12
+     code : |1-
+      // Summary: ALT key
+      PROCEDURE cTouch::ALT(LOCAL bForce is boolean = False)
+      
+      
+      // Do we need to force?
+      IF bForce THEN
+      	:m_bALTKey = False
+      END
+      
+      // If it is pressed, release it
+      IF :m_bALTKey THEN
+      	:m_bALTKey = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALT") THEN {:m_sNameKeyboardWindow+".BTN_ALT", indControl}..Pushed = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALTGR") THEN {:m_sNameKeyboardWindow+".BTN_ALTGR", indControl}..Pushed = False
+      ELSE
+      	// If it is released, press it
+      	:m_bALTKey = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALT") THEN {:m_sNameKeyboardWindow+".BTN_ALT", indControl}..Pushed = True
+      	IF :m_bCTRLKey THEN
+      		IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALTGR") THEN {:m_sNameKeyboardWindow+".BTN_ALTGR", indControl}..Pushed = True
+      	END
+      END
+      
+      // If Alt was clicked, remove the "capslock"
+      :m_bUppercaseKey = False
+      
+      :ModifyDisplay()
+     type : 458752
+   -
+     name : CapsLock
+     procedure_id : 1632033606329190794
+     type_code : 12
+     code : |1-
+      // Summary: CapsLock key
+      PROCEDURE cTouch::CapsLock()
+      
+      // If it is pressed, release it
+      IF :m_bUppercaseKey THEN
+      	:m_bUppercaseKey = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CAPSLOCK") THEN {:m_sNameKeyboardWindow+".BTN_CAPSLOCK", indControl}..Pushed = False
+      ELSE
+      	// If it is released, press it
+      	:m_bUppercaseKey = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CAPSLOCK") THEN {:m_sNameKeyboardWindow+".BTN_CAPSLOCK", indControl}..Pushed = True
+      END
+      
+      // If capslock was clicked, remove Shift, Alt and Ctrl
+      // Shift
+      :m_bShiftKey = False
+      IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_G") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_G", indControl}..Pushed = False
+      IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_D") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_D", indControl}..Pushed = False
+      
+      // Alt
+      :m_bALTKey = False
+      IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALT") THEN {:m_sNameKeyboardWindow+".BTN_ALT", indControl}..Pushed = False
+      
+      // Ctrl
+      :m_bCTRLKey = False
+      IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_G") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_G", indControl}..Pushed = False
+      IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_D") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_D", indControl}..Pushed = False
+      
+      :ModifyDisplay()
+     type : 458752
+   -
+     name : Ctrl
+     procedure_id : 1632033606329256330
+     type_code : 12
+     code : |1-
+      // Summary: Ctrl key
+      PROCEDURE cTouch::Ctrl(LOCAL bForce is boolean = False)
+      
+      
+      IF bForce THEN
+      	:m_bCTRLKey = False
+      END
+      
+      // If it is pressed, release it
+      IF :m_bCTRLKey THEN
+      	:m_bCTRLKey = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_G") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_G", indControl}..Pushed = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_D") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_D", indControl}..Pushed = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALTGR") THEN {:m_sNameKeyboardWindow+".BTN_ALTGR", indControl}..Pushed = False
+      ELSE
+      	// If it is released, press it
+      	:m_bCTRLKey = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_G") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_G", indControl}..Pushed = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_CTRL_D") THEN {:m_sNameKeyboardWindow+".BTN_CTRL_D", indControl}..Pushed = True
+      	IF :m_bALTKey THEN
+      		IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALTGR") THEN {:m_sNameKeyboardWindow+".BTN_ALTGR", indControl}..Pushed = True
+      	END
+      END
+      
+      // If Ctrl was clicked, remove the "capslock"
+      :m_bUppercaseKey = False
+      
+      :ModifyDisplay()
+     type : 458752
+   -
+     name : MoveKeyboard
+     procedure_id : 1632033606329321866
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // MoveKeyboard ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE GLOBAL cTouch::MoveKeyboard()
+      
+      _EVE.Return=2
+     type : 458752
+   -
+     name : SendArrowKey
+     internal_properties : CAAAAAgAAACWOVvojHQtoheIQWAaeh265bwR5+nyKNZLzjNs6YfY9nA6Jiad4BMZjqfAf3jHmbuNSoLWNBrdkMxlfJCwYiwwE17jmRZ4kkLNEvq/eyB5v97cWsmmyH/4xzpC62Q4vIUxBAZN0ZdLYIEKaNTfiGNiaXsm3itBHJcdcAphRpI67iM70K2tG0UEZqViXNLSViGfHMkhyx7N+5+oGuteIDimmIgb7A==
+     procedure_id : 1632033606329387402
+     type_code : 12
+     code : |1-
+      // Summary: Arrow keys
+      PROCEDURE cTouch::SendArrowKey(LOCAL sCharacter)
+      
+      sChar is string = ExtractString(sCharacter, 1, "=")
+      
+      sCharacter = ""
+      // Positions the code corresponding to the Shift, Alt or Ctrl key if it must be taken into account
+      IF :m_bShiftKey THEN sCharacter = "+"
+      IF :m_bALTKey THEN sCharacter = "%"
+      IF :m_bCTRLKey THEN sCharacter = "^"
+      // Opens the brace
+      sCharacter += "{"
+      
+      // Retrieve the code of the key that must be sent
+      SWITCH sChar
+      	CASE "VK_HOME"
+      		sCharacter += <§$000a§>
+      	CASE "VK_PRIOR"
+      		sCharacter += <§$000c§>
+      	CASE "VK_NEXT"
+      		sCharacter += <§$000e§>
+      	CASE "VK_END"
+      		sCharacter += <§$0010§>
+      	CASE "VK_DELETE"
+      		sCharacter += <§$0012§>
+      	CASE "VK_LEFT"
+      		sCharacter += <§$0014§>
+      	CASE "VK_UP"
+      		sCharacter += <§$0016§>
+      	CASE "VK_DOWN"
+      		sCharacter += <§$0018§>
+      	CASE "VK_RIGHT"
+      		sCharacter += <§$001a§>
+      	CASE "VK_TAB"
+      		sCharacter += <§$0030§>
+      	CASE "VK_INSERT"
+      		sCharacter += <§$0031§>
+      		
+      END
+      
+      // Sends the key to the destination control
+      SendKey(sCharacter, Handle(:m_sNameDestinationControl))
+      
+      // If Shift, Alt or Ctrl must be taken into account, runs the corresponding procedure
+      IF :m_bShiftKey THEN :Shift()
+      IF :m_bALTKey THEN :ALT()
+      IF :m_bCTRLKey THEN :Ctrl()
+     type : 458752
+   -
+     name : SendText
+     internal_properties : CAAAAAgAAADxyeaNMp71C/DVaW4PGwzU/in9fUy79+bFqGSndgPHnFJPz+FlfOPcxPZ7bzkD+k2nDko2VYKxtyqayblj4CXMGMi+hV+Q0SxnVCSMlDyD1GGCD5KjWwpF8H+NtDEDIXia7atyskYAl7gZ31NcSxyZvsj3oVaOUZKouyUmbwFZgNMbNBXxT4HAkqV8TDyIFHM1Z/uK
+     procedure_id : 1632033606329452938
+     type_code : 12
+     code : |1+
+      // Summary: sends the text "clicked" to the control
+      PROCEDURE cTouch::SendText(Code)
+      // Send a character 
+      // INPUT: Code (long integer) first parameter of the message sent to the edit control
+      
+      cCharacter is string
+      
+      
+      // if CTRL and ALT are pressed
+      IF :m_bCTRLKey AND :m_bALTKey THEN
+      	// Retrieves the equivalent ALTGR character of the key
+      	cCharacter = ExtractString(Code, 4, "[CAP]")
+      ELSE
+      	// if Alt or Ctrl is selected, sends the code of the key
+      	IF :m_bCTRLKey OR :m_bALTKey THEN
+      		:Key(ExtractString(Code, 2, "[CAP]"))
+      		RETURN
+      	END
+      	// if an uppercase key is selected, takes the uppercase character
+      	IF :m_bShiftKey OR :m_bUppercaseKey THEN
+      		cCharacter=ExtractString(Code, 3, "[CAP]")
+      	ELSE
+      		cCharacter=ExtractString(Code, 2, "[CAP]")
+      		IF 0 < Val(cCharacter) < 9 THEN
+      			// If the numeric lock is not enabled
+      			IF :m_clKeyboardKey:bActiveKey(CKeyboardKeys::cnNumLock) = False THEN
+      				
+      				RETURN
+      				
+      			END
+      		END
+      	END
+      END
+      
+      // Retrieves the current position of the cursor in the destination control of the text
+      :m_nCursorPos = {:m_sNameDestinationControl, indControl}..Cursor
+      :m_nPosEndCursor = {:m_sNameDestinationControl, indControl}..CursorEnd
+      
+      // Sends the message to the edit control
+      SWITCH cCharacter
+      	CASE "+", "%", "(", ")", "{", "}", "^"
+      		cCharacter = "{" + cCharacter + "}"
+      	other case
+      		
+      END
+      
+      // If the control is a numeric/currency control
+      IF {:m_sNameDestinationControl, indControl}..Type IN (typNum, typCurrency) THEN
+      	
+      	IF {:m_sNameDestinationControl, indControl} = 0 _AND_ :m_bActivePoint = False THEN
+      		// If the initial value of the control is set to 0 and if the point is not enabled (= no decimal must be added), the digit is assigned to the control
+      		{:m_sNameDestinationControl, indControl} = cCharacter
+      	ELSE
+      		
+      		// If the character is set to 0 _AND_ (if the point is enabled _OR_ if the point is already found)
+      		IF cCharacter = "0" _AND_ (:m_bActivePoint _OR_ Position({:m_sNameDestinationControl,indControl}[[ TO :m_nCursorPos-1]], :m_sDecimalSeparator)>0) THEN 
+      			// There is an additional significant zero
+      			:m_nNbSignificantZero++
+      		END
+      		
+      		// Changes the content of the text: insert the character with the separator if necessary
+      		{:m_sNameDestinationControl, indControl} = {:m_sNameDestinationControl,indControl}[[ TO :m_nCursorPos-1]] + (:m_bActivePoint ? :m_sDecimalSeparator ELSE "") + (Complete("",:m_nNbSignificantZero, "0")) + cCharacter + {:m_sNameDestinationControl, indControl}[[ :m_nPosEndCursor TO ]]	
+      		
+      		// Deletes the significant zeros
+      		IF NOT (cCharacter = "0" _AND_ (:m_bActivePoint _OR_ Position({:m_sNameDestinationControl,indControl}[[ TO :m_nCursorPos-1]], :m_sDecimalSeparator)>0)) THEN 
+      			// No need to manage the significant zeros anymore
+      			:m_nNbSignificantZero = 0
+      		END
+      		
+      	END
+      	
+      	// Runs the modification code of the control
+      	ExecuteProcess(:m_sNameDestinationControl, trtChange)
+      	
+      ELSE
+      	// Sends the key sequence to the destination control
+      	SendKey(cCharacter, Handle(:m_sNameDestinationControl))
+      END
+      
+      // The point is no longer enabled if there is no significant zero
+      IF :m_nNbSignificantZero = 0 THEN :m_bActivePoint = False
+      // If the click was performed on the decimal separator ("." by default) and if it is a numeric/currency type
+      IF cCharacter = :m_sDecimalSeparator _AND_ {:m_sNameDestinationControl, indControl}..Type IN (typNum, typCurrency) THEN
+      	// The point is enabled: the decimal point will be added when the next digit is typed
+      	:m_bActivePoint = True	
+      END
+      
+      // Moves the cursor of the destination control
+      IF {:m_sNameDestinationControl, indControl}..Type IN (typNum, typCurrency) THEN {:m_sNameDestinationControl, indControl}..Cursor = :m_nCursorPos+1
+      
+      // If Shift must be taken into account
+      IF :m_bShiftKey THEN 
+      	:Shift()
+      END
+      // If ALT must be taken into account
+      IF :m_bALTKey THEN 
+      	:ALT()
+      END
+      // If CTRL must be taken into account
+      IF :m_bCTRLKey THEN 
+      	:Ctrl()
+      END
+      
+     type : 458752
+   -
+     name : EvClick
+     internal_properties : CAAAAAgAAAA7UOSHnbI4bxn+tEg+8jDcf9+Lg0DA6KMfuT6DbwblscLvDUB2rGKaY/+N++V01EPtSVWdJFB7k/TgTwZhcNn8y9Bpo6t2sOlNU2ukakimScO4rDYmm6UP/GtFkO1Hy5Y4C0m4hCTUK2xFlf/q1ZorUIrtmW62h0D6YVvuYT8FqRCKrWAArO9udZilfNfdnhCs0B9ZeQfhrV0ud3hloeO5cc4ecqY4PeX7PW3OmnVZjSVhlqE=
+     procedure_id : 1632033606329518474
+     type_code : 12
+     code : |1-
+      // Summary: Click performed on a keyboard key
+      PROCEDURE GLOBAL cTouch::EvClick()
+      
+      EXTERN gclTouchKeyboard, TactileDynProc, CBOXDEBUG
+      
+      // Retrieves the notes of the button that was clicked (=> contains the type of key, its equivalent in uppercase and with AltGR)
+      cStc is string = {{ControlCurrent(),indControl}..FullName,indControl}..Note
+      
+      // Retrieves the TAG found in the notes of the button ( => defines the type of this button: function keys, character, MAJ keys, and so on)
+      SWITCH ExtractString(cStc,1,"[CAP]")
+      
+      	CASE <§$001e§> :
+      		// the key will be sent by SendKey()
+      		gclTouchKeyboard:Key(ExtractString(cStc, 2, "[CAP]"))
+      	CASE <§$001f§> :
+      		// the key will be sent as character
+      		gclTouchKeyboard:SendText(cStc)//,"+")
+      	CASE <§$0020§> :
+      		// Enter key down
+      		SendKey(<§$0021§>, Handle(gclTouchKeyboard:m_sNameDestinationControl))
+      		
+      	CASE <§$0022§> :
+      		// Del key down
+      		SendKey(<§$0023§>, Handle(gclTouchKeyboard:m_sNameDestinationControl))
+      	CASE <§$0024§> :
+      		// Arrow keys or movement keys (next page, previous page, ...)
+      		gclTouchKeyboard:SendArrowKey(ExtractString(cStc, 2, "[CAP]"))
+      	CASE <§$0025§> :
+      		// management of Caps Lock
+      		gclTouchKeyboard:CapsLock()
+      	CASE <§$0026§> :
+      		// management of Shift
+      		gclTouchKeyboard:Shift()
+      	CASE <§$0027§> :
+      		// management of Control
+      		gclTouchKeyboard:Ctrl()
+      	CASE <§$0028§> :
+      		// management of ALT
+      		gclTouchKeyboard:ALT()
+      	CASE <§$0029§> :
+      		// management of ALT GR (ALT + CTRL)
+      		gclTouchKeyboard:Ctrl()
+      		gclTouchKeyboard:ALT()
+      		
+      END
+     type : 458752
+   -
+     name : Shift
+     internal_properties : CAAAAAgAAADHG8E9vJ2OlbCt7+6jSwwsaq1l/949aQyNWHY3qiMfNB6L41+DSu0WQMI5X0WXql0bGh6M41hn9R6e11EfdKWkQPjCc50ux1JvrOXNcxXK/YL7jLfqjEvEY8Y+/RBsAKlTzkyTXZNVYlc0hPD/qKMyL9GgQpFLFpFL9gIbeg5UjdggPR4kbK43JRzJMY8wOb52Ncm8
+     procedure_id : 1632033606329584010
+     type_code : 12
+     code : |1-
+      // Summary: pressing the Shift key
+      PROCEDURE cTouch::Shift()
+      
+      
+      // Release the key if it is pressed
+      IF :m_bShiftKey THEN
+      	:m_bShiftKey = False	
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_G") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_G", indControl}..Pushed = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_D") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_D", indControl}..Pushed = False
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_ALTGR") THEN {:m_sNameKeyboardWindow+".BTN_ALTGR", indControl}..Pushed = False
+      ELSE
+      	// Otherwise, display the pressed image
+      	:m_bShiftKey = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_G") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_G", indControl}..Pushed = True
+      	IF ControlExist(:m_sNameKeyboardWindow+".BTN_SHIFT_D") THEN {:m_sNameKeyboardWindow+".BTN_SHIFT_D", indControl}..Pushed = True
+      END
+      
+      // If Shift was clicked, remove the "capslock"
+      :m_bUppercaseKey = False
+      
+      :ModifyDisplay()
+     type : 458752
+   -
+     name : Key
+     internal_properties : CAAAAAgAAADA7+sMpibvPPmS18pgrB/kh/L0P3cZGJbLDvOsaYeYtjB6pqZdoJMZzidAf7gHGbuNSsIWNBqd0EylvFAw4mxwU55jmda4EkKNEnq/O2B5v97c+ulGaB9Yp5oiy8SY3KVRZCbt8TfrwOFqyLS/6IMCiVvGfkvhvHd90OpBpvLaDsOb8E3NO2VkRgXCPDICjxhQYq8rncxvFXX2YIWInsoEQDJNOg==
+     procedure_id : 1632033606329649546
+     type_code : 12
+     code : |1-
+      // Builds the code to send
+      PROCEDURE cTouch::Key(Code)
+      
+      cCharacter is string
+      
+      // If the Shift or Caps key is pressed, 
+      IF :m_bShiftKey OR :m_bUppercaseKey THEN	
+      	cCharacter += "+" // +: code of CAPS key
+      	IF :m_bShiftKey THEN :Shift()
+      END
+      
+      // If the Control key is pressed
+      IF :m_bCTRLKey THEN 
+      	cCharacter = "^"	 // ^: code of the CTRL key
+      	:Ctrl()
+      END
+      
+      // If the ALT key is pressed
+      IF :m_bALTKey THEN 
+      	cCharacter = "%" // %: code of the ALT key
+      	:ALT()
+      END
+      
+      // Adds the code to send after the character that was previously defined
+      cCharacter+="{"+ Code +"}"
+      
+      // Sends the key combination to the window
+      SendKey(cCharacter, Handle(:m_sWindowName))
+     type : 458752
+   -
+     name : WinKey
+     procedure_id : 1632033606329715082
+     type_code : 12
+     code : |1-
+      // Summary: Windows key
+      PROCEDURE cTouch::WinKey()
+      
+      SendMessage(Handle(:m_sNameDestinationControl), ::WM_SYSCOMMAND, ::SC_TASKLIST,0)
+     type : 458752
+   -
+     name : ModifyDisplay
+     procedure_id : 1632033606329780618
+     type_code : 12
+     code : |1+
+      // Summary: Modifies the display of the keys according to the keys pressed (Shift, AltGr or none)
+      // Syntax:
+      //ModifyDisplay ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE cTouch::ModifyDisplay()
+      
+      nLetterSubscript 	is int
+      nControlSubscript	is int
+      sControlName 		is string
+      
+      // For each button, the notes contain the different "states" of the key
+      // (for example, for the "$" key, the notes contain "$", "£", "¤"
+      
+      // By default, the subscript of the element is set to 2
+      nLetterSubscript = 2
+      // If the Shift key is pressed
+      IF :m_bShiftKey _OR_ :m_bUppercaseKey THEN
+      	nLetterSubscript = 3
+      ELSE
+      	IF :m_bALTKey _AND_ :m_bCTRLKey THEN
+      		// If the AltGr key is pressed
+      		nLetterSubscript = 4
+      	END
+      END
+      
+      // For each control, modifies its caption
+      nControlSubscript = 1
+      sControlName = EnumControl(:m_sNameKeyboardWindow, nControlSubscript)
+      WHILE sControlName <> ""
+      	
+      	// If it is a character
+      	IF {sControlName, indControl}..Note [= "CHAR" THEN
+      		
+      		// Positions the proper caption according to the key pressed
+      		IF ExtractString({sControlName, indControl}..Note, nLetterSubscript, "[CAP]") = EOT THEN
+      			{sControlName, indControl}..Caption = ""
+      		ELSE
+      			{sControlName, indControl}..Caption = ExtractString({sControlName, indControl}..Note, nLetterSubscript, "[CAP]")	
+      			IF {sControlName, indControl}..Caption = "&" THEN {sControlName, indControl}..Caption = "&&"
+      		END	
+      		
+      	END
+      	
+      	nControlSubscript++
+      	sControlName = EnumControl(:m_sNameKeyboardWindow, nControlSubscript)
+      END
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : cTactile
+resources :
+ string_res :
+  identifier : 0x4332eaed46b4e8d0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : "."
+     index : 0
+   -
+     text :
+      en-GB : "cTouch::EvClick"
+     index : 1
+   -
+     text :
+      en-GB : .*
+     index : 2
+   -
+     text :
+      en-GB : "cTouch::Move"
+     index : 3
+   -
+     text :
+      en-GB : =
+     index : 4
+   -
+     text :
+      en-GB : "+"
+     index : 5
+   -
+     text :
+      en-GB : "%"
+     index : 6
+   -
+     text :
+      en-GB : ^
+     index : 7
+   -
+     text :
+      en-GB : "{"
+     index : 8
+   -
+     text :
+      en-GB : VK_HOME
+     index : 9
+   -
+     text :
+      en-GB : "ORIGIN}"
+     index : 10
+   -
+     text :
+      en-GB : VK_PRIOR
+     index : 11
+   -
+     text :
+      en-GB : "PGUP}"
+     index : 12
+   -
+     text :
+      en-GB : VK_NEXT
+     index : 13
+   -
+     text :
+      en-GB : "PGDN}"
+     index : 14
+   -
+     text :
+      en-GB : VK_END
+     index : 15
+   -
+     text :
+      en-GB : "END}"
+     index : 16
+   -
+     text :
+      en-GB : VK_DELETE
+     index : 17
+   -
+     text :
+      en-GB : "DEL}"
+     index : 18
+   -
+     text :
+      en-GB : VK_LEFT
+     index : 19
+   -
+     text :
+      en-GB : "LEFT}"
+     index : 20
+   -
+     text :
+      en-GB : VK_UP
+     index : 21
+   -
+     text :
+      en-GB : "TOP}"
+     index : 22
+   -
+     text :
+      en-GB : VK_DOWN
+     index : 23
+   -
+     text :
+      en-GB : "DOWN}"
+     index : 24
+   -
+     text :
+      en-GB : VK_RIGHT
+     index : 25
+   -
+     text :
+      en-GB : "RIGHT}"
+     index : 26
+   -
+     text :
+      en-GB : "[CAP]"
+     index : 27
+   -
+     text :
+      en-GB : (
+     index : 28
+   -
+     text :
+      en-GB : )
+     index : 29
+   -
+     text :
+      en-GB : SENDKEY
+     index : 30
+   -
+     text :
+      en-GB : CHAR
+     index : 31
+   -
+     text :
+      en-GB : RETURN
+     index : 32
+   -
+     text :
+      en-GB : "{ENTER}"
+     index : 33
+   -
+     text :
+      en-GB : BACKSPACE
+     index : 34
+   -
+     text :
+      en-GB : "{BS}"
+     index : 35
+   -
+     text :
+      en-GB : KEYDOWN
+     index : 36
+   -
+     text :
+      en-GB : CAPSLOCK
+     index : 37
+   -
+     text :
+      en-GB : SHIFT
+     index : 38
+   -
+     text :
+      en-GB : CTRL
+     index : 39
+   -
+     text :
+      en-GB : ALT
+     index : 40
+   -
+     text :
+      en-GB : ALTGR
+     index : 41
+   -
+     text :
+      en-GB : A
+     index : 42
+   -
+     text :
+      en-GB : B
+     index : 43
+   -
+     text :
+      en-GB : C
+     index : 44
+   -
+     text :
+      en-GB : D
+     index : 45
+   -
+     text :
+      en-GB : E
+     index : 46
+   -
+     text :
+      en-GB : F
+     index : 47
+   -
+     text :
+      en-GB : "TAB}"
+     index : 48
+   -
+     text :
+      en-GB : "INS}"
+     index : 49
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,759 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CKeyboardKeys
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16a625ec06cf4bbc
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAADA0yxDHybSzgcDQE1Lmk+OdR6vSWUav+QjceTwiOsWhRiObLi3GHHfU+MoRp6+LoO09pku/PjPX/lDZH7istL7daWJcWubpa2oTOH6YGjp7dDPhEjz9DhtouNm922s1Q+yLA2lpHQS3bXxhmAduskkVIYbeduYU+I0T4STSxEe+6Fml1vf
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      CKeyboardKeys is Class
+      	
+      	// Constants corresponding to "system" keys
+      	CONSTANT	
+      		// Constants for specific keys 
+      		cnNumLock = 0x90
+      		cnScrollLock = 0x91
+      		cnCapsLock = 0x14
+      		cnAltGr = 0xA5
+      		
+      		// Names given to the keys
+      		csTABKey = <§$0000§>	
+      		csEnterKey = <§$0001§>
+      		csNumLockKey = <§$0002§>
+      		csCapsLockKey = <§$0003§>
+      		csScrollLockKey = <§$0004§>
+      		csPauseKey = <§$0005§>
+      		csWindowsKey1 = <§$0006§>
+      		csWindowsKey2 = <§$0007§>
+      		csAltGrKey = <§$0008§>
+      		csRightClickKey = <§$0009§>
+      		csEscKey = <§$000a§>
+      		csSpaceKey = <§$000b§>
+      		csDeleteKey = <§$000c§>
+      		csControlKey = <§$000d§>
+      		csShiftKey = <§$000e§>
+      		
+      		csLeftArrowKey = <§$000f§>
+      		csRightArrowKey = <§$0010§>
+      		csUpArrowKey = <§$0011§>
+      		csDownArrowKey = <§$0012§>
+      		
+      		csInsertKey = <§$0013§>
+      		csHomeKey = <§$0014§>
+      		csPageUpKey = <§$0015§>
+      		csPageDownKey = <§$0016§>
+      		csDelKey = <§$0017§>
+      		csEndKey = <§$0018§>
+      		
+      		csDivisionKey = "</>"
+      		csMultiplicationKey = "<*>"
+      		csMinusKey = "<->"
+      		csPlusKey = "<+>"
+      		
+      		csAmpersandKey = "&"
+      		csEAcuteAccentKey = "é"
+      		csQuotationMarkKey = """"
+      		csQuoteKey = "'"
+      		csLeftParenthesisKey = "("
+      		csMinusKeyBis = "-"
+      		csEGraveAccentKey = "è"
+      		csUnderscoreKey ="_"
+      		csCCedillaKey = "ç"
+      		csAAcuteAccentKey = "à"
+      		csRightParenthesisKey = ")"
+      		csEqualKey = "="
+      		csPlusKeyBis = "+"
+      		csATKey = "@"
+      		csSquareKey = "²"
+      		csDegreeKey = "°"
+      		csDieresisKey = "¨"
+      		csPoundKey = "£"
+      		csDollarKey = "$"
+      		csAsteriskKey = "¤"
+      		csPercentageKey = "%"
+      		csUAccentKey = "ù"
+      		
+      		csTildeKey = "~"
+      		csNumberSignKey = "#"
+      		csLeftCurlyBraceKey = "{"
+      		csLeftSquareBracketKey = "["
+      		csMoreKey = "|"	
+      		csApostropheKey = "`"
+      		csBackslashKey = "\"
+      		csCircumflexKey = "^"
+      		csCommercialAtKey = "@"
+      		csRightSquareBracketKey = "]"
+      		csRightCurlyBraceKey = "}"
+      		
+      		csGreaterThanKey = ">"
+      		csLessThanKey = "<"
+      		csCommaKey = "<,>"
+      		csQuestionMarkKey = "<?>"
+      		csSemicolonKey = "<;>"
+      		csPeriodKey = "<.>"
+      		csSlashKey = "</>"
+      		csColonKey = "<:>"
+      		csExclamationMarkKey = "<!>"
+      		csChapterKey = "<§s§>>"
+      		csMuKey = "<µ>"
+      		csMultiplicationKeyBis = "<*>"
+      		
+      		
+      		csUnknownKey = <§$0047§>
+      		csInactiveKey = <§$0048§>
+      	END
+      	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1632033610625207228
+     type_code : 27
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Constructor ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Constructor()
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1632033610625272764
+     type_code : 28
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // Destructor ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : sReturnKey
+     internal_properties : CAAAAAgAAACwZqP9SI8Eq9frDUxzflv4gy0Fut2M74/L+QwbMNc+7pRUofT3JcLQKBICMgxj5PtpjJB7c3Ct9BD9tGKRdKWY5axBogPC3wCAlL2s19LOO+uCKFnKL0qAf5LSyA1YesWJyHnlWw3nYOKPhIU7HjHjbOXsCtkInI+4Otvl/00rgeXYau4emNxTZ9trLrrCMkwK4X+woVZ0GzkWiVmHKCUPZhQsVTzS1Flz5WMlD2kzYWXamOoGIZ6moZRAE7tLniLpFX0OhdA7cSkLztTqKqjBMznYTHVXkZdo+aoeM7a/P/eDD7oVWeSQSSsgInxfV0zc5UgAcEbtzUxP8FwAQNyDfFj+I/s5QyiM2FVCmHXSpi5L9nj6zRxrgraw
+     procedure_id : 1632033610625338300
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // [ <Result> = ] sReturnKey (<nKeyNum>)
+      //
+      // Parameters:
+      // 	nKeyNum: <specify the role of nKeyNum>
+      // Return value:
+      // 	Undefined type: <specify the possible values as well as their interpretation>
+      //
+      PROCEDURE sReturnKey(nKeyNum=_EVE.wParam)
+      
+      // Alphanumeric keys
+      IF nKeyNum >= 65 AND nKeyNum <= 90 THEN
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 		
+      		// Uppercase characters
+      		RESULT Charact(Asc("A")+nKeyNum-65)				
+      	ELSE		
+      		// Lowercase Characters
+      		RESULT Charact(Asc("a")+nKeyNum-65)				
+      	END
+      	
+      END
+      
+      // Keys on the numeric keypad
+      IF (nKeyNum >= 96 AND nKeyNum <= 105) OR nKeyNum = 110 THEN
+      	// Depends on the status of Num Lock
+      	
+      	IF :bActiveKey(::cnNumLock) = True THEN		
+      		// Num Lock is turned on
+      		IF nKeyNum = 110 THEN RESULT ::csPeriodKey
+      		RESULT Charact(Asc("0")+nKeyNum-96)		
+      	ELSE
+      		// Num Lock is turned off
+      		IF nKeyNum = 96 	THEN RESULT ::csInsertKey
+      		IF nKeyNum = 97 	THEN RESULT ::csEndKey
+      		IF nKeyNum = 98 	THEN RESULT ::csDownArrowKey
+      		IF nKeyNum = 99 	THEN RESULT ::csPageDownKey
+      		IF nKeyNum = 100 THEN RESULT ::csLeftArrowKey
+      		IF nKeyNum = 101 THEN RESULT ::csInactiveKey
+      		IF nKeyNum = 102 THEN RESULT ::csRightArrowKey
+      		IF nKeyNum = 103 THEN RESULT ::csHomeKey
+      		IF nKeyNum = 104 THEN RESULT ::csUpArrowKey
+      		IF nKeyNum = 105 THEN RESULT ::csPageUpKey
+      		IF nKeyNum = 110 THEN RESULT ::csDelKey	
+      	END
+      	
+      END
+      
+      // Function keys (F1-F12)
+      IF nKeyNum >= 112 AND nKeyNum <= 123 THEN
+      	RESULT "F"+(nKeyNum+1-112)
+      END
+      
+      // Numeric keys on keyboard
+      IF nKeyNum >= 48 AND nKeyNum <= 57 THEN
+      	// Depends on ALT-GR and SHIFT!
+      	
+      	IF KeyPressed(::cnAltGr, True) THEN
+      		IF nKeyNum = 48 THEN RESULT ::csCommercialAtKey
+      		IF nKeyNum = 49 THEN RESULT ::csInactiveKey		
+      		IF nKeyNum = 50 THEN RESULT ::csTildeKey
+      		IF nKeyNum = 51 THEN RESULT ::csNumberSignKey
+      		IF nKeyNum = 52 THEN RESULT ::csLeftCurlyBraceKey
+      		IF nKeyNum = 53 THEN RESULT ::csLeftSquareBracketKey
+      		IF nKeyNum = 54 THEN RESULT ::csMoreKey
+      		IF nKeyNum = 55 THEN RESULT ::csApostropheKey
+      		IF nKeyNum = 56 THEN RESULT ::csBackslashKey
+      		IF nKeyNum = 57 THEN RESULT ::csCircumflexKey	
+      	END
+      	
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT Charact(Asc("0")+nKeyNum-48)+"_BIS"
+      	END
+      	
+      	IF nKeyNum = 48 THEN RESULT ::csAAcuteAccentKey
+      	IF nKeyNum = 49 THEN RESULT ::csAmpersandKey
+      	IF nKeyNum = 50 THEN RESULT ::csEAcuteAccentKey
+      	IF nKeyNum = 51 THEN RESULT ::csQuotationMarkKey
+      	IF nKeyNum = 52 THEN RESULT ::csQuoteKey
+      	IF nKeyNum = 53 THEN RESULT ::csLeftParenthesisKey
+      	IF nKeyNum = 54 THEN RESULT ::csMinusKeyBis
+      	IF nKeyNum = 55 THEN RESULT ::csEGraveAccentKey
+      	IF nKeyNum = 56 THEN RESULT ::csUnderscoreKey
+      	IF nKeyNum = 57 THEN RESULT ::csCCedillaKey
+      END
+      
+      // cursors
+      IF nKeyNum >= 37 AND nKeyNum <= 40 THEN
+      	IF nKeyNum = 37 THEN RESULT ::csLeftArrowKey
+      	IF nKeyNum = 38 THEN RESULT ::csUpArrowKey
+      	IF nKeyNum = 39 THEN RESULT ::csRightArrowKey
+      	IF nKeyNum = 40 THEN RESULT ::csDownArrowKey
+      END
+      
+      
+      // Keys < and >
+      IF nKeyNum = 226 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csGreaterThanKey
+      	ELSE
+      		RESULT ::csLessThanKey
+      	END	
+      END
+      
+      // Keys , and?
+      IF nKeyNum = 188 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csQuestionMarkKey
+      	ELSE
+      		RESULT ::csCommaKey
+      	END		
+      END
+      
+      // Keys ; and.
+      IF nKeyNum = 190 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csPeriodKey
+      	ELSE
+      		RESULT ::csSemicolonKey
+      	END		
+      END
+      
+      // Keys / and: 
+      IF nKeyNum = 191 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csSlashKey
+      	ELSE
+      		RESULT ::csColonKey
+      	END		
+      END
+      
+      // Key ° ) ]
+      IF nKeyNum = 219 THEN
+      	IF KeyPressed(::cnAltGr, True) THEN
+      		RESULT ::csRightSquareBracketKey
+      	END
+      	
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csDegreeKey
+      	ELSE
+      		RESULT ::csRightParenthesisKey
+      	END		
+      END
+      
+      // Key + = }
+      IF nKeyNum = 187 THEN
+      	IF KeyPressed(::cnAltGr, True) THEN
+      		RESULT ::csRightCurlyBraceKey
+      	END
+      	
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csPlusKeyBis
+      	ELSE
+      		RESULT ::csEqualKey
+      	END		
+      END
+      
+      // Key ¨^
+      IF nKeyNum = 221 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csDieresisKey
+      	ELSE
+      		RESULT ::csCircumflexKey
+      	END		
+      END
+      
+      // Key £ $ ¤
+      IF nKeyNum = 186 THEN
+      	IF KeyPressed(::cnAltGr, True) THEN
+      		RESULT ::csAsteriskKey
+      	END
+      	
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csPoundKey
+      	ELSE
+      		RESULT ::csDollarKey
+      	END		
+      END
+      
+      // Keys % and ù
+      IF nKeyNum = 192 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csPercentageKey
+      	ELSE
+      		RESULT ::csUAccentKey
+      	END		
+      END
+      
+      // Key µ * 
+      IF nKeyNum = 220 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csMuKey
+      	ELSE
+      		RESULT ::csMultiplicationKeyBis
+      	END		
+      END
+      
+      // Key § !
+      IF nKeyNum = 223 THEN
+      	// Shift key
+      	IF KeyPressed(kpShift, True) OR :bActiveKey(::cnCapsLock) THEN 
+      		RESULT ::csChapterKey
+      	ELSE
+      		RESULT ::csExclamationMarkKey
+      	END		
+      END
+      
+      
+      // Other keys
+      IF nKeyNum = 33 THEN RESULT ::csPageUpKey
+      IF nKeyNum = 34 THEN RESULT ::csPageDownKey
+      IF nKeyNum = 35 THEN RESULT ::csEndKey
+      IF nKeyNum = 36 THEN RESULT ::csHomeKey
+      IF nKeyNum = 45 THEN RESULT ::csInsertKey
+      IF nKeyNum = 46 THEN RESULT ::csDelKey
+      IF nKeyNum = 144 THEN RESULT ::csNumLockKey
+      
+      IF nKeyNum = 8 THEN RESULT ::csDeleteKey
+      IF nKeyNum = 9 THEN RESULT ::csTABKey
+      IF nKeyNum = 13 THEN RESULT ::csEnterKey
+      IF nKeyNum = 16 THEN RESULT ::csShiftKey
+      IF nKeyNum = 17 THEN RESULT ::csControlKey
+      IF nKeyNum = 18 THEN RESULT ::csAltGrKey
+      IF nKeyNum = 19 THEN RESULT ::csPauseKey
+      IF nKeyNum = 20 THEN RESULT ::csCapsLockKey
+      IF nKeyNum = 27 THEN RESULT ::csEscKey
+      IF nKeyNum = 32 THEN RESULT ::csSpaceKey
+      IF nKeyNum = 91 THEN RESULT ::csWindowsKey1
+      IF nKeyNum = 92 THEN RESULT ::csWindowsKey2
+      IF nKeyNum = 93 THEN RESULT ::csRightClickKey
+      IF nKeyNum = 222 THEN RESULT ::csSquareKey
+      
+      IF nKeyNum = 106 THEN RESULT ::csMultiplicationKey
+      IF nKeyNum = 107 THEN RESULT ::csPlusKey
+      IF nKeyNum = 109 THEN RESULT ::csMinusKey
+      IF nKeyNum = 111 THEN RESULT ::csDivisionKey
+      IF nKeyNum = 144 THEN RESULT ::csNumLockKey
+      IF nKeyNum = 145 THEN RESULT ::csScrollLockKey
+      
+      // Unrecognized key
+      RESULT ::csUnknownKey
+     type : 458752
+   -
+     name : bActiveKey
+     internal_properties : CAAAAAgAAAChk6TvO9TlVlFqB0js54bfMatubMa3xwsJcEsmiNVJCZvW2FilQnWhkvnPVgwyy5yBPNjUxhpZne00l8ilq2eLIiq7zq4zOx03ifE/Q8WJGShiW3I3Nu2Mxx+kHyTEdGd2onYsa1msBMrsHUY=
+     procedure_id : 1632033610625403836
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // [ <Result> = ] bActiveKey (<nValSpecificKey> is int)
+      //
+      // Parameters:
+      //	nValSpecificKey (int) : <specify the role of nValSpecificKey
+      // Return value:
+      // 	integer: <specify the possible values as well as their interpretation>
+      //
+      PROCEDURE bActiveKey(nValSpecificKey is int)
+      
+      RESULT BinaryAND(API("user32", "GetKeyState", nValSpecificKey), 1)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CTouchesClavier
+resources :
+ string_res :
+  identifier : 0x3d490e02445d6a11
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : <TAB>
+     index : 0
+   -
+     text :
+      en-GB : <ENTER>
+     index : 1
+   -
+     text :
+      en-GB : <NUM_LOCK>
+     index : 2
+   -
+     text :
+      en-GB : <CAPS_LOCK>
+     index : 3
+   -
+     text :
+      en-GB : <SCROLL_LOCK>
+     index : 4
+   -
+     text :
+      en-GB : <PAUSE>
+     index : 5
+   -
+     text :
+      en-GB : <WINDOWS_1>
+     index : 6
+   -
+     text :
+      en-GB : <WINDOWS_2>
+     index : 7
+   -
+     text :
+      en-GB : <ALT_GR>
+     index : 8
+   -
+     text :
+      en-GB : <RIGHT_CLICK>
+     index : 9
+   -
+     text :
+      en-GB : <ESC>
+     index : 10
+   -
+     text :
+      en-GB : <SPACE>
+     index : 11
+   -
+     text :
+      en-GB : <DELETE>
+     index : 12
+   -
+     text :
+      en-GB : <CTRL>
+     index : 13
+   -
+     text :
+      en-GB : <SHIFT>
+     index : 14
+   -
+     text :
+      en-GB : <LEFT_ARROW>
+     index : 15
+   -
+     text :
+      en-GB : <RIGHT_ARROW>
+     index : 16
+   -
+     text :
+      en-GB : <UP_ARROW>
+     index : 17
+   -
+     text :
+      en-GB : <DOWN_ARROW>
+     index : 18
+   -
+     text :
+      en-GB : <INSERT>
+     index : 19
+   -
+     text :
+      en-GB : <HOME>
+     index : 20
+   -
+     text :
+      en-GB : <PAGE_UP>
+     index : 21
+   -
+     text :
+      en-GB : <PAGE_DOWN>
+     index : 22
+   -
+     text :
+      en-GB : <DEL>
+     index : 23
+   -
+     text :
+      en-GB : <END>
+     index : 24
+   -
+     text :
+      en-GB : </>
+     index : 25
+   -
+     text :
+      en-GB : <*>
+     index : 26
+   -
+     text :
+      en-GB : <->
+     index : 27
+   -
+     text :
+      en-GB : <+>
+     index : 28
+   -
+     text :
+      en-GB : "&"
+     index : 29
+   -
+     text :
+      en-GB : é
+     index : 30
+   -
+     text :
+      en-GB : "\""
+     index : 31
+   -
+     text :
+      en-GB : "'"
+     index : 32
+   -
+     text :
+      en-GB : (
+     index : 33
+   -
+     text :
+      en-GB : "-"
+     index : 34
+   -
+     text :
+      en-GB : è
+     index : 35
+   -
+     text :
+      en-GB : _
+     index : 36
+   -
+     text :
+      en-GB : ç
+     index : 37
+   -
+     text :
+      en-GB : to
+     index : 38
+   -
+     text :
+      en-GB : )
+     index : 39
+   -
+     text :
+      en-GB : =
+     index : 40
+   -
+     text :
+      en-GB : "+"
+     index : 41
+   -
+     text :
+      en-GB : "@"
+     index : 42
+   -
+     text :
+      en-GB : ²
+     index : 43
+   -
+     text :
+      en-GB : °
+     index : 44
+   -
+     text :
+      en-GB : ¨
+     index : 45
+   -
+     text :
+      en-GB : £
+     index : 46
+   -
+     text :
+      en-GB : $
+     index : 47
+   -
+     text :
+      en-GB : ¤
+     index : 48
+   -
+     text :
+      en-GB : "%"
+     index : 49
+   -
+     text :
+      en-GB : ù
+     index : 50
+   -
+     text :
+      en-GB : "~"
+     index : 51
+   -
+     text :
+      en-GB : "#"
+     index : 52
+   -
+     text :
+      en-GB : "{"
+     index : 53
+   -
+     text :
+      en-GB : "["
+     index : 54
+   -
+     text :
+      en-GB : "|"
+     index : 55
+   -
+     text :
+      en-GB : "`"
+     index : 56
+   -
+     text :
+      en-GB : \
+     index : 57
+   -
+     text :
+      en-GB : ^
+     index : 58
+   -
+     text :
+      en-GB : "]"
+     index : 59
+   -
+     text :
+      en-GB : "}"
+     index : 60
+   -
+     text :
+      en-GB : ">"
+     index : 61
+   -
+     text :
+      en-GB : <
+     index : 62
+   -
+     text :
+      en-GB : "<,>"
+     index : 63
+   -
+     text :
+      en-GB : <?>
+     index : 64
+   -
+     text :
+      en-GB : <;>
+     index : 65
+   -
+     text :
+      en-GB : <.>
+     index : 66
+   -
+     text :
+      en-GB : "<:>"
+     index : 67
+   -
+     text :
+      en-GB : <!>
+     index : 68
+   -
+     text :
+      en-GB : <§>
+     index : 69
+   -
+     text :
+      en-GB : <µ>
+     index : 70
+   -
+     text :
+      en-GB : <UNKNOWN>
+     index : 71
+   -
+     text :
+      en-GB : <DISABLED>
+     index : 72
+   -
+     text :
+      en-GB : A
+     index : 73
+   -
+     text :
+      en-GB : a
+     index : 74
+   -
+     text :
+      en-GB : "0"
+     index : 75
+   -
+     text :
+      en-GB : F
+     index : 76
+   -
+     text :
+      en-GB : _BIS
+     index : 77
+   -
+     text :
+      en-GB : user32
+     index : 78
+   -
+     text :
+      en-GB : GetKeyState
+     index : 79
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

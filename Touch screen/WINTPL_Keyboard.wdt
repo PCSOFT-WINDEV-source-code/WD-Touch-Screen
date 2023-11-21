@@ -1,0 +1,66 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WINTPL_Keyboard
+ major_version : 28
+ minor_version : 0
+ type : 18
+ description : ""
+ subtype : 0
+window :
+ name : WINTPL_Keyboard
+ identifier : 0x26a625ed10e551f6
+ internal_properties : CAAAAAgAAABo3zx6sr2adnJWS82jf1npPwzK3ZwblUr4IYoefHXoIBCZcY+xUUxBkqKETtlJuN6caOTH0ZsXviyP2Ro2zLfyg7s+5txh4Io6kLr9tS5XhV0aCnUy7Y7wRW9bbQsToBoxvxvThUXdaUV6xudh+P4dQydWl7fNFbqaUlf9MI3QJ0K/3AbAlY1480j0uBWwO96geeuxYQGa60DVtNiaVDVg++T/p/4Bxr7mkpVXDPf3dUHC3lRn8VbKlPPHopGxblzYwwBECm8LMK44grjYuMVoxh2Rx//KeUZSq/xFCK6XMJoKMrOxCLjpL7/gXV6XNgBBTz3eYUZ5bUWuMLpBFXBOG+t5L2a3i7Gz0poXik+w9z1154TKr9ulxeRG8CZ9FVxkNuxL4+BueKinJrj8kybEwlskbysh9Flob877EFRhUEkhual0uAw7vXtg3P9TkOpszOMa691bYuxEGFVAwGWQJx0dfwCGvJpAYzSjudt2CdKHbVe4rRwUdJku2EJi8l28Z6AsoWXzNniAKvT22VZGITjcL3p0f0UQo4oMZwlU0W/aVh49v3Sil0DFjx6J4aTYH4IOorgrz8+SdgvNuxN55Y17+iTgWV6u6nqAfvaKm7OUggf0CciNKrmaLHeaJDhLev3/ynCdIOz/PCCw/6dyke0vS4Q5u7OYQz7paxIwVF7NEhXBENit7bEFI/+F4vFFPFb4fHCLjpwcg/0dSNtIn6pRTcW7fA8ji66GqOE4q+QVQpcmKN4i34SIdF/bJl0rYmkFp7zvcQgHDVuwQsWFHfmJk8zv9quPT95v9831jp2yNAM6ji019YZt8Avwm6T50itR55WQoLrslp+acsZfwK9owfxq26h5qGwabh5zlHsLlr73IcBqVZ76HS6pFfwK3fOT9gw+OMVVkVSlDAfE
+ properties :
+  width : 266
+  height : 274
+  widthClient : 264
+  heightClient : 272
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x24bcfd589e185625
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAUXDLRIaY05Y7vA2ktUzdZxlJuZwLYbRi66kZ++ASmzNfY+9gv1zlraOacfikK9UAoY8W6CHHlMj3C9YIoIPg3iZcsGW/CPWV/7hWJrdfiCSjdt6VySGh9RCdIUw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x10740b4b00af9bc0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : The control name is invalid
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

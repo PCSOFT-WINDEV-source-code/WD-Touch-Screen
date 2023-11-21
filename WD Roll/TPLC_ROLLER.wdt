@@ -1,0 +1,2052 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : TPLC_ROLLER
+ major_version : 28
+ minor_version : 0
+ type : 20
+ description : ""
+ subtype : 0
+window :
+ name : TPLC_ROLLER
+ identifier : 0x26a625e60cae372b
+ internal_properties : CAAAAAgAAAAfQU1RbHKxEFeqzzBA5tabZdfo/g/HGdssCKciTm8nUiU+JmOs+RWsw3SiKXTzv4DHNvgO//Irib7D46njj0SVcszf/5Twa8S2y1ZZ9PLmWhmecPCY2Z6Z6iCRv8Qx9Enf2zqfmInP30hSbSbdDNz8uiMrS8g/CWCCEXRSfJe1ftLKoyJpVLM0vv3+WamL0HP84gyoFLdnjYu/YuPBgDswze9SfLE66hYL0J+icx/Y8uElsS9feDf51vmJPdRYGYX4p6BgUmmdIs1Bt7VWa1AVzxM49OUtoyNrv7ULLxPpJyvPhhY5GruBywu/hN9Ly6/FuIEC875kccbnqthN8JvwV6AydAvz1NPweCz/1xR2qTgIOqDnB1SXkWwjq9QJjSnhUBbwT/dDwB+vmrxN84XL42MujcoaYSCAILuLGHtNmmMGsd0gJ+jsP6mhu6tLW2Rs4hglHCilAwnhZEPT+lhmr8avJkzH5WgnrC/n3qFSHWugid4A1bClerZdaVxEfNrMHh8MwmwVQm3FXPCStqU4SinB35S/RKpJpYZXcC0BEGssr5gzPQSQc6e/3EHrG/FdFCYR1WzzJaiYmJ2dEJgP9Qe2f4/oG2b2TNEHFGeQJ+N9eFUFWitw8yoASIbs8OFqk9Qzck4q1BU4z40CwHrq61deCDUZqOC9gJR0U4r2cTLbhGp/gbbP3Awr0uuymnhh1RhuRmIF/K5qiQnwS7K/XjXaW14iUzR6ma6S5o3vT/SwyHuhK3w=
+ properties :
+  width : 320
+  height : 216
+ controls :
+  -
+    name : TPLC_ROLLER
+    identifier : 0x26a625e60caf372b
+    internal_properties : CAAAAAgAAADJY2ohB7dXiHVt0D2Qtl4xo95lGoQwKBtyG+V9rctUwXM+Li2MxFGQBuGcgEPd1JXQGpfFE9H+Qbdg8Jn+fvF/LChbouroGls5s6kHkOFYiXJ2d7Gq1hkYxFTohLJPT2lwDoaUJCg6VdMbqDnhlpgabSZPwSXpwE86b8h3ckKcoEdTKGhcNivp8dyak5uuOjfUPTUrPltuU8GJsbBkDwC+0TX3GNGNq0R3YxQAWV985uNBn91ZkcsGdxq9313auAtOQKUCcaylEmMuzC+z0K7qIR7fTFNLO0w7RhL6Mnl/iH+GXCcpQz+rsn23degE5gffmOIHrFHMFHnv+0PeVSzoDH+XlpvgFabmAvtSccrGSlzkrX3foEjvL5oRaRoon2Qe+RLgvekbqQAJVYbSmtJXn/FUCrW0YCrTH8Onk+lKLW6H3Uz/RHl2rfV3BnPHDmGb4XNU727OH3IkO33NhrbSkxYm3A4TkWf9tbNAlyh1MMpLbyVR/HgdmCB+OVdjfqxY2falQJedz+RB1dAO127RGeYq
+    properties :
+     width : 320
+     height : 216
+    controls :
+     -
+       name : IMG_BOX
+       identifier : 0x26a625e60cb9372b
+       internal_properties : CAAAAAgAAAA0y3rwcypmN4d4lztLACQrjiLilInsXFEgtQMuK50usS3Jch0Nut6YMVnvkurr5vKoj1lJrM/74UEds9Fbc0d308B53oz1rO/PdFd2gd0McDZLXpbBBLaJffOtAOGEMNnabJBqQxKniHlfKyY0fkCDnLKe98BRocybIC8LK3jFCb2+Jc0wAPP/EKZRHdQNuNAwWnUK2tbmO+Ua0ZBwNS72E86A49S/zd5hrlhnKCOKfj4xqFf0En1cjrNn932FZMsKUIuZ2edleStzBZNn3qNxcyWS0+0Vdv84IFtVYJgQDGuWTumGwETGUg/xfewiGvXrUe0eGzTJufPaiUZpuiZF9KBWwymWckpNwuLa8W/eddb28bF7fNNvtbFdbAyY65WK2xSTeWXwhjnIMvxAgAx+LUUYRIQ58pz7fXKmPokenoCI6fVMBWA1fis+IId9VRVksj8l6iMonWe2afQXZ69CfTrzHLMw6Z3XohH/yeHbm+xroY2NtIFXNgIXQU9qk3du32Lx7lmdOalgaVQTPY9PnKftVQiYZyVTllqwbOM5kkvZLjgFvHn02is5HWkjrT1g7z0LaJ5nCcra0+OSRzN1JwldL7L3ea1k0AOhNadQKNH4UMmQm/S5Mrv2KO+o0WkwqtA+0c4=
+       properties :
+        width : 320
+        height : 216
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+         -
+           code : |1-
+            
+           type : 66058
+     -
+       name : IMG_PICKER
+       identifier : 0x26a625e60cb8372b
+       internal_properties : CAAAAAgAAAA+C1CEApZvhcXS6SeSBfbQFWlmTm5nUaDIkClVfMPF3mxlpF8l/vQ1+2KPuMIVQa8FncLcBG9pj3thxOvurjX0VkJEKPKBFketIz+CPHGfqCUVs1PAw+7MIgvxZAu6H8vyvod7ub7lgaRdWjR8tev3PuYpvfzyh8VJk3CG9MKVFXKJjwSsQU3kwSYBH6/n9nZNtRf8r5DuX33yIHPQisG9OpMiiZYsdvzD1mXcg9OndM8E0ra6u1wTLo7r9r2r0uhBteGieLXZEWrzwfza0KQ3hZU71/jumFO+48NrZ1Pyau1u8RV9BAqkccMhNGJ7XNF7O62LNXbzbwu7uoTVQgthvmNm0mud0uF68MLn3ROexGZAi/jdwbkppt/fbuRYdVkiiG013GJookaoLu0aRKjYgtwusUiqyjtnTI+7U6p3nduj92GR688kARBq8dNkmkbl0rhTVlpGZrcKXDnXqc3DpG1zzq6Wr8LS/GrxHa1MAPh2SCdHBHNwI6nWkekgXCHilVKOj7TtnRveI5F3Gee1uO1cZe0fMUNQ2n+lGnZwvNhOXEJD7viaXBXf48npnpFpvLGGSSNAPRTkgYUtrYrblcfJJeVdOjRXaswCgMNRrBHQZf97SK0w2FTsg8TJnI7dV5uLVbO83/L42vE=
+       properties :
+        x : 28
+        y : 80
+        width : 265
+        height : 56
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : SC_CONTAINER
+       identifier : 0x26a625e60cb0372b
+       internal_properties : CAAAAAgAAAA4TzKR5eX96JQ2szDKzDoicWR/6p8vOAh48gbx6qKzLbBllWwGude3Nr5XtGozS+aTDfKnkoWxPqeHL1wkEa08AQGQpFyk/welKTR4/r5pWVU+I0asknSRVduNwZJmUkGl3BgrIk+nhOOhyjC4CQRaCyRdDx/1EQAOImrftYeH8iH1pnZV+rVRvNaEQpA3JP4FAFjow4icql8CxbWI+pz6KLEU9pQN9a0KrLwlbt3oNk1mRDDZbFhKBEx9vEF01XJt8ChmFqNhfh+jyJZuQmIynCPNJygY89hfy2m2uojXlz6USXdVM3+OFRVxAAUVeGDAC94Kor3PltpUatuqIvMVeXzLY/g6v70LTRcYl5Ix5KAuOeC/ur1hJxCx6opxQi7w0EvX3CSY3/VmfaLZiAhM1QGYU6sFRTaOKAzSCJe7nWUynBc3ceySNOq8uirm2sTGWQx1WPPMr64/1HnCTnJJjWUpJhmZ+lH85ismeKC26MUHVTk2OFD4NIRe2K2YFQIN63/GEpIdlAu5Tc5TU8i4JrSo/lMLX57/2kqxuIg1+7L1J1kzVwtRT8DPeKyASSi14XqO7sTdF3fjYpl3hoxIWJq9ug==
+       properties :
+        x : 35
+        y : 10
+        width : 252
+        height : 195
+       controls :
+        -
+          name : LOOP_CONTENT
+          identifier : 0x26a625e60cb1372b
+          internal_properties : CAAAAAgAAABpArYX8FYHnW7qj4Sg8U4xlQDWRQN6+0LUTC8opQdbhvC0EpeQuGEOn1WDBxbneJhGntL+rrNeUu7tZrj7/0npn3i7VbumnJ3M2IHNnU7nRgydWKzlRRsdkgaHYRpYKygn537IVTv8Hzwoa9U85uJk3b+wctVKbID80crKv26sPSuOyPytPYick7FSFfjIzoUtcv0AqHJp9qCxjN+8LKDSypqdYLd9C4WIoNGD20/jMgtBRlqu3pvsreXk8Nug03IVRWjIAPBqKGVVVOTTYZvA35nbyA4tySKEn6NHJYN1izDyjs+GbvRXZzQX4uq2sueWb0QzaTVCaxIv6nBUmqdiAY+loY1uAFe0u4b0h1+AhRGPLNmyvntVcLM7dUp/0kh46Z36qHbKPVmwT1v2bUavgiGh19tceiM5iZE/mZ1Lc/O+cymt2KU6QVTsFyKvqXvgWif2SUjL8+zP57sOWKdm7ohx++1ENuQDnfharxeh+wBdVwi1L3fB0fl7oWVnzlgXT8oYN2bIKe3+iG8YaaVauisrJVRvs4XYYzKgnrr2BtnkdDV5V6F282iJf5RzWRIjiHYHnfYALVxde9k8vM8UZfn1BeXbJdQP0oY4Tbhww/vffXLpuoU07qME2MZpROgqOycGYhxTkRGv8x/ke1V2+0kfCtmxnvi6LKGCsaICB3hHFOa1fEqGl/JYtp/tKTv1pvfjr24sLzFRs6vq9DlAxPLGjvhszl2SXHRKOUpsmae7TjQzqjTPa0Ph5xdk09yhvEN5n0kIva5CBnuzQkHNeAkbk6f35y76SndnE4Np0Q3uKRcetK/e+WFTBAtEJKDOhpFJDL2lR6BpMZ8ccUu12k6x6674pJKvUfA/b3v6A+EH8U/Zod2FuXcwWqPSYm2k8gRu/rmNLNUgytqJti32K5JrIQZEpIevC4ow7QLoYQ/DWeiL+YR/qY5KOJemuiI6KHLXonDEU0Cvs0sPRMP0p8JOTmXifm4mcOB0UoMO9QMolMYv/lfqL5Cx+9HJP37DcKZ+tmAw6Tqt/VMHU+Br+XTQ2Fr//rou0PJQUQOtfay1jNd1D3sf1Lx7vjfo3q9m1dGL6Iv+mwbc9myUjGBzwZT7MwDFKXEqhTSvyegWY0n7UkOR7yBXQQsE2a6wAM8w3TkX9fZo7c5edU4FOEBb4u+rP+j34oDREnqYceZM5N6BNL1Sr/adR8QA1Vi8wQlqNFn2yqhIhJkY8j0NOLrafyp8EumPLTMtdUdqxLSxgImXwId8j9LeJi1ljSGEW8G57QO/KCi+gXxEz6jTDgh4FbfBH9oJ7/Ul7/f9VBytuUclosllMRAtroGrCYrxLcwXQpA1RV1blIZQ567/5yzhTMa0GWWQwB08pVmB9Gh+flBgWzCJKwMOBsMXrAZ4Y2O6Nfc10hLpZzc3sHhDK3VWUqjdXrTZ42FqZMhgl3F7iEkmdGQZHFrVio1oCpFNijxD8xQVyxy+Zbqgv3vi48WoY3VdVfBdupHZcNaABbGF/I2/9GGcVRRyxPKvHVQzJa27VwJWIz/wnhUIXyx2eqhKh4xfl7P78Lh9kpv2Azip57GMslQOzTcafHM2EE9yhBdm1xGlASB+qpFbruLrTt21hpyqBGhA98CsGVvQ65Jlvp00ADLt/BW/tT7XuMJti84nLeuRCKYTxM+RL50oYfvGXY1kgqExc3py9vhA9L+mcuB0Te3fHEb0MC0bp0EQVINmiYPFzcED8YgWvJHeGN3DR6C9rglDQRZTeeRSs6ZUh6QspG81knhG6tzIE7atFt2KZWfC5vIGmsgv1J81e24n96pzjfdSYehgrcMhSB8SeunFjjT+FLTNXyAtVdL+UE09ZovVbRJq3EBlvppRwaHLCPaqh1k897Ft5VNA2iJ8SdlOy4rQBNo9coqWMavXZ1KlcEC3ihSiIPtFGnHP0Y7WcZQISptHgSnB2+QigsoUk6gKAdlL/j5y6/Y7bbf9b7DgiWdtE48DMIvQsss0/jV8Klkg0B7WpMELeopYYVUS0LS1azugcF9jibT8lVc9edHdM3z6lZOKfWcosTGKeX3pLzPq6M+3ovBMfJesJJ37LWWlJkZ4zl7LxNkFoYR/5UvlYiyYWqwKgIloNhsaqqfM1kSgVYb2XoYo5VEOxXRbHq2dxVhKQOSK9rmG7UVOjS67o9JX+r5i5+Ol9jg4s811bQWJ4q/L3eth0iUNQsXMIzwmaSiMgGBwM0cWbH31OpFHBLTPrEIeU7NSgEUIyB3v6ERUEzwdB1gLt15p7Svj0waQlTCxQqRZ88FRQ53l6/a801LyU1WCg5mkoKC309mLfld5+Vx+MKdavTiKdgzCVHW7qvf33TBysXL1eoGMbJGosyC4fbuSrq9m+U0cKlHbjDezmPpizD9XWttWRBMkhb4MRWPBsk79bSWYFuYq4ZJIYPpbt8I8zmvfAgKCj1vmuHSJ5eKUNrit/EEL+/FtvctNkCltRZLAz6iqn+XVraMVocFq+LxGeE8QDLY1D8FzteP44SQJTOHttkQ6sHakhV6k4prR53xUMWt1sxuFXQrlIsx3YyGRwFKuYhuLKnMCgqwIcWygGEsJo5Se/Dq9G4WsDpfRJD4qhETsb1kTRUCyaC1RVWXt6+L7k0sJpo2F+eBCh8IGYOE=
+          properties :
+           x : -4
+           width : 252
+           height : 195
+          controls :
+           -
+             name : STC_ELEMENT
+             identifier : 0x26a625e60cb5372b
+             internal_properties : CAAAAAgAAAATVuNes/cVQSUnkMrpzmqgl7nMaEOYBREzzDKWEUEqtE6vJvhuvwh/iH1JW9C1F0oMM9QjoAlwNV/NG0fMkrtkK2foLpGmk9VNuOyp6e8twtxpiPOCBQiZsW6oBVQQczfuIB981CfqNOzdOiYwDJ2Cl93H8u6sRxO9ITUcnS+4ww7TCjHXGOYg/sfux1nOif6KPstSHYB0FlNr7Na/2vMUHVAWRHEuQrAzQcMet4Wb62j9NcY2+UypNuysG++Jov5nwvMErtl9cPc2J6VSy1Ow2xktCCLiOGPt4Lv2dVRRfSLV9Nk52ghydV9ZAnFFCP6wkbi3r3Ko2R/Yx65n7sPsUJtxDNomenbOhqHiwZzrh1T+Dg==
+             properties :
+              x : 6
+              y : 5
+              width : 240
+              height : 26
+             type : 3
+             code_elements :
+              type_code : 2
+              p_codes : []
+          columns :
+           -
+             name : ATT_ELEMENT_CAPTION
+             identifier : 0x26a625e60cb2372b
+             internal_properties : CAAAAAgAAADsq90mLElIkFt9x6l92cKquTycABEgkzCjBi2KWTkxICTeG2GPvO56CDaCoBZRx9yFQmnQDY7rM83X58kgtBpyhizoMiENMvhAetnQdJL89xbV8xQ2Fiv+MgWgycQTxHFEqX+W/prkW2xLuCcEyiQHQpwegjWsOjL8iajTaNBj4A==
+             type : 3
+             content :
+              identifier : 0x2557a6a904e353fc
+              internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+              type : 3
+             code_elements :
+              type_code : 46
+              p_codes : []
+           -
+             name : ATT_STORED_VAL
+             identifier : 0x26a625e60cb3372b
+             internal_properties : CAAAAAgAAAD62G7UpKKAom3Y1EmkIm272YcHOB4fDV8sXcvo98e2WdpY+RDirYTF+vnbWjoTwNzYzoXV1W5nsKdWOU4chhy+lK/IoeAnUO0I59e5hIZsLexIhyFrLEzw7hzWHjgDwBtUHLuJicU+nEY=
+             type : 3
+             content :
+              identifier : 0x2557a6a904e553fc
+              internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+              type : 3
+             code_elements :
+              type_code : 46
+              p_codes : []
+           -
+             name : ATT_STATUS
+             identifier : 0x26a625e60cb4372b
+             internal_properties : CAAAAAgAAAAQYpSyMjCS0PsGKncSqJuVN4kVLiR97736i/vO1W0Mgm2bigDCDTRFqvnrWipj4Lxo/lX1LdZ/WG+O8YYUbmQmfNegaRjvN/f7IRF3Mji+g0Im5UM1Gj7inEqEqILJ+tHqqsn7G2vYNiw=
+             type : 3
+             content :
+              identifier : 0x2557a6a904e753fc
+              internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+              type : 3
+             code_elements :
+              type_code : 46
+              p_codes : []
+          type : 30
+          code_elements :
+           type_code : 42
+           p_codes :
+            -
+              code : |1-
+               
+              type : 14
+            -
+              type : 35
+              enabled : false
+            -
+              code : |1-
+               
+              type : 15
+            -
+              code : |1-
+               
+              type : 16
+            -
+              code : |1-
+               
+              type : 19
+            -
+              code : |1-
+               
+              type : 20
+            -
+              code : |1-
+               
+               // No code for the cache copies
+               IF MySelf..Name IN (LOOPUp, LOOPDown) THEN
+               	RETURN
+               ELSE
+               	
+               	// If the status of the row is not set to active
+               	IF ATT_STATUS <> Active THEN
+               		
+               		// Changes the color of the caption if necessary
+               		IF LOOP_CONTENT[CurrentSubscript].STC_ELEMENT..Color <> LightGray THEN
+               			LOOP_CONTENT[CurrentSubscript].STC_ELEMENT..Color 			= LightGray		
+               			
+               			// Also on the cache copies
+               			{LOOPUp, indControl}[CurrentSubscript].STC_ELEMENT..Color 	= LightGray
+               			{LOOPDown, indControl}[CurrentSubscript].STC_ELEMENT..Color 	= LightGray
+               		END
+               	ELSE
+               		
+               		// Changes the color of the caption if necessary
+               		IF LOOP_CONTENT[CurrentSubscript].STC_ELEMENT..Color <> DefaultColor THEN		
+               			LOOP_CONTENT[CurrentSubscript].STC_ELEMENT..Color 			= DefaultColor
+               			
+               			// Also on the cache copies
+               			{LOOPUp, indControl}[CurrentSubscript].STC_ELEMENT..Color 	= DefaultColor
+               			{LOOPDown, indControl}[CurrentSubscript].STC_ELEMENT..Color 	= DefaultColor
+               		END
+               	END
+               END
+              type : 21
+            -
+              type : 22
+              enabled : false
+            -
+              type : 24
+              enabled : false
+            -
+              type : 23
+              enabled : false
+            -
+              type : 25
+              enabled : false
+            -
+              code : |1-
+               
+               // Stores the subscript
+               LOOPTouchInfo.RowEnd = MySelf
+              type : 33
+            -
+              type : 230
+              enabled : false
+            -
+              type : 241
+              enabled : false
+            -
+              code : |1-
+               
+              type : 17
+            -
+              type : 222
+              enabled : false
+            -
+              type : 223
+              enabled : false
+            -
+              type : 224
+              enabled : false
+            -
+              internal_properties : CAAAAAgAAAD5YD9QghZKZaSxHldmYaQHr4/iYotlKTRlNvQ1BSM+FJ+R0a6Blehsarwqms3r6RebBGQtku12+y2MkNDv2Kw46rxqXo18UYL3OJabw2XwZmSJPOwHTZoxm/DonPE/5lbugBXCiSsuExvFtCm5bPK4sd8zVTgREnJPtBhtyBNQElam6Pny4a4Cpj7mfGQ7llU=
+              code : |1-
+               
+               nX		is int
+               nY		is int
+               nRow	is int
+               
+               // If it is not the cache copy
+               IF MySelf..Name IN (LOOPUp, LOOPDown) THEN
+               	RETURN
+               END
+               
+               // If we move lower than half of the roll
+               IF LOOPInfinite _AND_ NOT LOOPTouchInfo.ForcePosition _AND_ MySelf..Y > SC_CONTAINER..Y + (MySelf..LineHeight * 2 + 6) _AND_ NOT LOOPTouchInfo.Animation THEN
+               	// Move up
+               	MySelf..Visible = False
+               	MySelf..Y -= MySelf..Height
+               	MySelf..Visible = True
+               	WinRedraw
+               	RETURN
+               END
+               
+               // If we move higher than half of the roll
+               IF LOOPInfinite _AND_ NOT LOOPTouchInfo.ForcePosition _AND_ MySelf..Y < SC_CONTAINER..Y - MySelf..Height + (MySelf..LineHeight * 2 + 6) _AND_ NOT LOOPTouchInfo.Animation THEN
+               	// Move down
+               	MySelf..Visible = False
+               	MySelf..Y += MySelf..Height + 1
+               	MySelf..Visible = True
+               	WinRedraw
+               	RETURN
+               END
+               
+               // If an animation is in progress
+               IF LOOPTouchInfo.Animation THEN
+               	
+               	// Center of the looper
+               	nX = MySelf..Width / 2
+               	
+               	// Coordinate of the radio button in relation to the looper
+               	nY = (MySelf..LineHeight * 2 + 6) - (MySelf..Y - SC_CONTAINER..Y)
+               	
+               	// Selected row
+               	nRow = LooperInfoXY(MySelf, liLineNumber, nX, nY)
+               	IF nRow <> LOOPTouchInfo.RowEnd THEN
+               		Tick()
+               	END
+               	
+               	// Stores the row that is currently selected
+               	MySelf = nRow
+               	LOOPTouchInfo.RowEnd = nRow
+               END
+               
+               // Repositions the sibling
+               {LOOPUp, indControl}..Visible 		= False
+               {LOOPDown, indControl}..Visible 	= False
+               {LOOPDown, indControl}..Y  	   	 	= LOOP_CONTENT..Y + LOOP_CONTENT..Height + 1
+               {LOOPUp, indControl}..Y  	   		= LOOP_CONTENT..Y - LOOP_CONTENT..Height - 1
+               {LOOPUp, indControl}..Visible 		= LOOPInfinite
+               {LOOPDown, indControl}..Visible 	= LOOPInfinite
+              type : 65539
+            -
+              code : |1-
+               
+               IF MySelf..Name IN (LOOPUp, LOOPDown) THEN
+               	RETURN
+               END
+               
+               IF MySelf..Name <> LOOPUp THEN
+               	{LOOPUp, indControl}..Visible 		= False
+               	{LOOPUp, indControl}..Height  		= LOOP_CONTENT..Height
+               	{LOOPUp, indControl}..Y  	   		= LOOP_CONTENT..Y - LOOP_CONTENT..Height - 1
+               	{LOOPUp, indControl}..Visible 		= LOOPInfinite
+               END
+               
+               IF MySelf..Name <> LOOPDown THEN
+               	{LOOPDown, indControl}..Visible 	= False
+               	{LOOPDown, indControl}..Height  	= LOOP_CONTENT..Height
+               	{LOOPDown, indControl}..Y  	   	 	= LOOP_CONTENT..Y + LOOP_CONTENT..Height + 1
+               	{LOOPDown, indControl}..Visible 	= LOOPInfinite
+               END
+              type : 65541
+        -
+          name : IMG_TOUCH
+          identifier : 0x26a625e60cb6372b
+          internal_properties : CAAAAAgAAABpKctksGY2OGtCaAGq5at/uifUZX25scP4gaHkP6zpa1OBe/KPnR+c+9C6cIm9pMBrek3IUpxVJZ3nk23UKd2cbqas2Ya3OUPX7EFFxt2xJ4CwyPUf++UR+eVDPW+Xo5ZxnZOOB2vazuL3TZzcUZTRCe8eO8UlYdo4aVpxpvZZcvvPgcrm8nigLT4UVQ9shZyt+s11Hyv3R8chjG6fWrPdeV7g55+gASmjQ9XZuTAdEW2DIcVUoX4MS8IY6A2Zrbtu6GLIt8pcQsFlxkajHhG433DSHTv2MErmpgPG9o79BqtISIzFASy2JTfoGCQpjfnBO08a2aFe8BNJbxVQay8wAyr29/3vRMF+2C9N8/vMTtfCKJ3cVsfui8NmXDblDf9acgp/e4IqciSoby/mg7Q32f8p5x+MTy63BBSnwaB1e8N9EWpm3TI3/A72U+EP7d6WuBN21BuFpfpFWOuCbZ+KBv8Bw4OwQXc/BO/JjY/RQ0/9U+u0jjT4vmuu1Opf6/Bu9g==
+          properties :
+           x : -5
+           y : -4
+           width : 252
+           height : 197
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAACJdfXtL/0e9ZCQEep0kM51NHSWpAsLgPUBgmQa5ln/iQgFTVVsK4Hf6rHa6zUEqURr3ylnXOUabyCZvQaP93fkXbGlTfwr5evhGuZLhaNKAfugMVsF4+UM7SbzDSsz4nRZleJgUlNPTpaQTEtu/zVzGsk7ncAhQh/cURde8VIGBQ==
+              code : |1-
+               
+               nDeltaY is int
+               nNewY   is int
+               nYMIN	is int
+               nMaxY	is int
+               nX		is int
+               nY		is int
+               nRow	is int
+               
+               // If the button is pressed
+               IF LOOPTouchInfo.Pressed THEN
+               	
+               	// Stores the coordinates
+               	LOOPTouchInfo.EndX 		= MouseXPos
+               	LOOPTouchInfo.EndY 		= MouseYPos
+               	
+               	// Calculates the move and the new position
+               	nDeltaY = LOOPTouchInfo.EndY - LOOPTouchInfo.PreviousY
+               	nNewY   = LOOP_CONTENT..Y + nDeltaY
+               	
+               	// Recalculates the minimum and maximum authorized positions
+               	nYMIN	= SC_CONTAINER..Y - LOOP_CONTENT..Height + LOOP_CONTENT..LineHeight * 3 + 6
+               	nMaxY	= SC_CONTAINER..Y + LOOP_CONTENT..LineHeight * 2 + 6
+               	
+               	// If we move too low
+               	IF NOT LOOPInfinite THEN
+               		IF nNewY < nYMIN THEN
+               			nNewY = LOOP_CONTENT..Y + nDeltaY / (nNewY / (nYMIN / 1.5))
+               			
+               			// If we move too high
+               		ELSE IF nNewY > nMaxY  THEN
+               			nNewY = LOOP_CONTENT..Y + nDeltaY / (nNewY / (nMaxY / 1.5))
+               		END
+               	END
+               	
+               	// Stores the new coordinates
+               	LOOPTouchInfo.PreviousX 	= LOOPTouchInfo.EndX	
+               	LOOPTouchInfo.PreviousY 	= LOOPTouchInfo.EndY	
+               	LOOPTouchInfo.Direction		= nDeltaY > 0 ? -1 ELSE 1
+               	
+               	// Plays the move
+               	AnimationPlayOnControlProperty(LOOP_CONTENT, "Y", LOOP_CONTENT..Y, nNewY, 10)
+               	
+               	// Center of the looper
+               	nX = LOOP_CONTENT..Width / 2
+               	
+               	// Coordinate of the radio button in relation to the looper
+               	nY = (LOOP_CONTENT..LineHeight * 2 + 6) - (LOOP_CONTENT..Y - SC_CONTAINER..Y)
+               	
+               	// Selected row
+               	nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber, nX, nY)
+               	IF nRow <> LOOPTouchInfo.RowEnd _AND_ (nRow > 0 _AND_ LOOP_CONTENT.ATT_STATUS[nRow] = Active) THEN
+               		Tick()
+               	END
+               	
+               	// Stores the row that is currently selected
+               	LOOPTouchInfo.RowEnd = nRow
+               END
+              type : 66048
+            -
+              code : |1-
+               
+               nCursorPos		is int = CursorPos(cpScreen)
+               
+               IF LOOPTouchInfo.Pressed THEN
+               	RESULT False
+               END
+               
+               VariableReset(LOOPTouchInfo)
+               
+               // Stores the initial coordinates
+               LOOPTouchInfo.OriginX 		= MouseXPos
+               LOOPTouchInfo.OriginY 		= MouseYPos
+               LOOPTouchInfo.PreviousX		= LOOPTouchInfo.OriginX
+               LOOPTouchInfo.PreviousY		= LOOPTouchInfo.OriginY
+               
+               // Stores the initial row
+               LOOPTouchInfo.RowEnd		= LOOP_CONTENT
+               LOOPTouchInfo.RowOrigin	= LooperInfoXY(LOOP_CONTENT, liLineNumber + liOriginScreen, LoWord(nCursorPos), HiWord(nCursorPos))
+               
+               // Button down
+               LOOPTouchInfo.Pressed			= True
+               LOOPTouchInfo.Timestamp		= Today + Now
+              type : 66049
+            -
+              internal_properties : CAAAAAgAAABPwuUjLNFpyT5OIQwFmyjiyKFJMIdMDAMK7DpL0aa5VZIkA9RPwvE9rJed0p2reYXjtCjF/N4sHXUC8vzHxkBXD5WR3JLdwT5yngJ4VUoRV8aLNzMLZspNVlrRMVaFovChY3XTZQ70EcZR6UYMPIQ6vszP0NZIhJraKkW6pQtGbqOb0qZaqqTg2b3mIjjc+YtF81h+Fgq9E+5NnjVT
+              code : |1-
+               
+               nYMIN			is int
+               nMaxY			is int
+               nDist			is int
+               nY 				is int
+               nX 				is int
+               dtNow 	is datetime
+               duDuration			is duration
+               nRow			is int
+               nDirection			is int
+               nCursorPos		is int = CursorPos(cpScreen)
+               
+               // Stores the end coordinates
+               LOOPTouchInfo.EndX 		= MouseXPos
+               LOOPTouchInfo.EndY 		= MouseYPos
+               
+               // Button released
+               LOOPTouchInfo.Pressed		= False
+               
+               // Recalculates the minimum and maximum authorized positions
+               nYMIN = SC_CONTAINER..Y - LOOP_CONTENT..Height + LOOP_CONTENT..LineHeight * 3 + 6
+               nMaxY = SC_CONTAINER..Y + LOOP_CONTENT..LineHeight * 2 + 6
+               nDist = LOOPTouchInfo.EndY - LOOPTouchInfo.OriginY
+               
+               // Duration of the move
+               dtNow = Today + Now
+               duDuration = dtNow - LOOPTouchInfo.Timestamp
+               
+               // If the duration of the move is short enough
+               IF duDuration..InMilliseconds < 300 _AND_ nDist <> 0 THEN	
+               	
+               	// Plays the animation for the "drop"
+               	ContinueAnimation(duDuration..InMilliseconds)
+               END
+               
+               // If we move too low
+               IF LOOP_CONTENT..Y < nYMIN THEN
+               	
+               	// Move on the row
+               	__ScrollTo(MyselfName, LOOP_CONTENT..Occurrence, (nDist > 0 ? -1 ELSE 1), *, *, *, True)	
+               	
+               	// If we move too high
+               ELSE IF LOOP_CONTENT..Y > nMaxY  THEN
+               	
+               	// Move on the row
+               	__ScrollTo(MyselfName, 1, (nDist > 0 ? -1 ELSE 1), *, *, *, True)	
+               	
+               	// If a move was performed
+               ELSE IF Abs(nDist) > 5 THEN
+               	
+               	// Center of the looper
+               	nX = LOOP_CONTENT..Width / 2
+               	
+               	// Coordinate of the radio button in relation to the looper
+               	nY = (LOOP_CONTENT..LineHeight * 2 + 6) - (LOOP_CONTENT..Y - SC_CONTAINER..Y) + LOOP_CONTENT..LineHeight / 2
+               	
+               	// Selected row
+               	nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber, nX, nY)
+               	
+               	// Move on the row
+               	__ScrollTo(MyselfName, nRow, (nDist > 0 ? -1 ELSE 1), *, *, *, True)	
+               	
+               	// A click was performed
+               ELSE
+               	
+               	// Y coordinate of the click
+               	nY = HiWord(nCursorPos)
+               	nDirection = 1
+               	
+               	IF LOOPInfinite THEN
+               		
+               		// Click below the looper
+               		IF nY >= LOOP_CONTENT..Y + LOOP_CONTENT..Height + WinInYPos THEN
+               			
+               			// Move up
+               			nY -= LOOP_CONTENT..Height + 1
+               			
+               			// Stores the end row
+               			nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber + liOriginScreen, LoWord(nCursorPos), nY)	
+               			
+               			LOOPTouchInfo.ForcePosition = True
+               			LOOP_CONTENT..Y += LOOP_CONTENT..Height
+               			LOOPTouchInfo.ForcePosition = False
+               			nDirection = 1
+               			
+               			// Click above the looper
+               		ELSE IF nY <= LOOP_CONTENT..Y + WinInYPos THEN
+               			
+               			// Move down
+               			nY += LOOP_CONTENT..Height + 1
+               			
+               			// Stores the end row
+               			nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber + liOriginScreen, LoWord(nCursorPos), nY)	
+               			
+               			LOOPTouchInfo.ForcePosition = True
+               			LOOP_CONTENT..Y -= LOOP_CONTENT..Height
+               			LOOPTouchInfo.ForcePosition = False
+               			nDirection = -1
+               			
+               		ELSE
+               			// Stores the end row
+               			nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber + liOriginScreen, LoWord(nCursorPos), nY)	
+               		END		
+               	ELSE
+               		// Stores the end row
+               		nRow = LooperInfoXY(LOOP_CONTENT, liLineNumber + liOriginScreen, LoWord(nCursorPos), nY)	
+               	END
+               	
+               	IF nRow > 0 THEN
+               		
+               		// Move on the row
+               		__ScrollTo(MyselfName, nRow, nDirection, *, *, *, True)		
+               	END
+               END
+              type : 66050
+            -
+              type : 66058
+       type : 40
+       code_elements :
+        type_code : 34
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAADdl9uvUb6fNo8Mv7ok75DpI31s/GjNA9uPstMAqDVvr3E8jtizUPHNWMOjdOjGvd43WlqwIFSCVC4N+K2A0L6UnWHkK2UMeOj0fpJMdrKYajvZKAPaS2ZXEHjd9DehF8QFZddBQoxLoT0AIXo=
+           code : |1-
+            
+            // Anchoring mode
+            LOOPAnchoring			is int = rollFixedSize
+            
+            // Display Mode
+            LOOPInfinite			is boolean = False
+            
+            // Date and time of the last sound played
+            LOOPTickLastDH		is datetime = Today + Now
+            
+            // Information about scrolling
+            LOOPTouchInfo			is TOUCHINFO
+            
+            // Name of supercontrol
+            MyselfName			is string = MySelf..Name
+            
+            LOOPUp				is string = "LOOP" + GetGUID(guidRough)
+            LOOPDown				is string = "LOOP" + GetGUID(guidRough)
+         -
+           internal_properties : CAAAAAgAAADxY2vnvBrmrThb0IB4W8Y4rnnuaFMXxy0nsS07GoHrk0C0Q6bjN4n7qckxQfS4Jy1T8HINCt/JRvSHj37N6lV+nMgjChYgGHanmwaIAT2b+QyAsoK3OlUqF3kkuxEFgeWYWdG6d7INaDyxn69GEr/ZI2g946fczzmn43VEM8/MmZY9qkv6FDVLjKxhYkls9g==
+           code : |1-
+            
+            // Creates a copy of the looper
+            ControlClone(LOOP_CONTENT, LOOPUp)
+            {LOOPUp, indControl}..Visible  = False
+            {LOOPUp, indControl}..ZOrder = LOOP_CONTENT..ZOrder 
+            
+            // Creates a copy of the looper
+            ControlClone(LOOP_CONTENT, LOOPDown)
+            {LOOPDown, indControl}..Visible  = False
+            {LOOPDown, indControl}..ZOrder = LOOP_CONTENT..ZOrder 
+            
+            // Total height of the looper
+            LOOP_CONTENT..Height = LOOP_CONTENT..LineHeight * Max(1, LOOP_CONTENT..Occurrence)
+            
+            // Initial position
+            LOOP_CONTENT..Y 		 = MyselfY + LOOP_CONTENT..LineHeight * 2 + MySelf..Y + 6
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           internal_properties : CAAAAAgAAAAG97UJjFsCN4b5yZFHKRtbOgQcw4yUrT78brhJLwFTgDj4h9VEbueJPM2PYOlDxxbCpCLqU/AdLsD445+qmdQFWVEGfkq41g9D2KB1PPGbMZWmHDarDj68P8yDKaxrfQAtfTvdQkp0OE7tFhP89xgPDoiZ7cTZ3aeqSzcUdRI=
+           code : |1-
+            // <Supercontrol>..Value = <Value>
+            // <Value>: Variant, subscript of the looper or stored value
+            PROCEDURE Assignment(LOCAL vValue)
+            
+            nRow is int
+            
+            // If the return of stored values is active
+            IF ReturnStoredVal THEN
+            	
+            	// Finds the row containing the stored value
+            	nRow = LooperSeek(ATT_STORED_VAL, vValue, True)		
+            ELSE
+            	// Direct row
+            	nRow = vValue
+            END
+            
+            // If the row is valid
+            IF nRow > 0 _AND_ nRow <= LOOP_CONTENT..Occurrence THEN
+            	
+            	// Move on the row
+            	__ScrollTo(MyselfName, nRow, 1, False, False, *, True)		
+            END
+           type : 43
+         -
+           internal_properties : CAAAAAgAAACMbTuH1hFVo4Zx53+Rge/nlnCQyf+UzWYEvqjJr8l7+GCAV5V0fn+5rAVHGFGTx4ZSJDoSG9hNhhhIw++6sdwJXSWCunZ8WttvhESR2AVP1TkKuGJHoqIYK6jXVUgP8fQhcTd5rv7odOIo2VABRLMUI6VupBn2xsmIua2e/5g=
+           code : |1-
+            // <Value> = <Supercontrol>..Value
+            // <Value>: Variant, subscript of the looper or stored value
+            IF ReturnStoredVal THEN
+            	
+            	// Returns the stored value
+            	RESULT ATT_STORED_VAL[LOOP_CONTENT]
+            ELSE
+            	
+            	// Returns the subscript
+            	RESULT LOOP_CONTENT
+            END
+           type : 42
+        procedures :
+         -
+           name : ContinueAnimation
+           internal_properties : CAAAAAgAAAAD3x2UcGM3t1WtdhUDywAwLT2fZE/FQh4JObvI/uyWCSzsTCjKoBREygc2WJKjsL05b1WpKN2L+2jVDVx4wANcVSud6cDkXVRVG5Ri7toq853Wwkn4tDNXyIAmSqpdIfw6qynzWtOUO9SZ43CcP5mwG2WwNS6+iRszxuTG5WQIOOaGiRG9iyEwJQOuzUPryG+68Q34
+           procedure_id : 1632033584846419755
+           type_code : 14
+           code : |1-
+            // Summary: Performs the rest of the move once the mouse button is released (inertia)
+            // Syntax:
+            // ContinueAnimation ()
+            //
+            // Parameters:
+            //	None
+            // Return value:
+            // 	None
+            //
+            PROCEDURE ContinueAnimation(LOCAL nMoveDuration is int)
+            
+            nDist		 	is int
+            nYMIN			is int
+            nMaxY			is int
+            rDeceleration	is real
+            rSpeed	  	is real	
+            rOutDist	  	is real
+            nNewDist	  	is int
+            nNewTime	  	is int
+            
+            // Calculates the distance browsed
+            nDist = LOOPTouchInfo.EndY - LOOPTouchInfo.OriginY
+            
+            // Recalculates the minimum and maximum authorized positions
+            nYMIN = SC_CONTAINER..Y - LOOP_CONTENT..Height + LOOP_CONTENT..LineHeight * 3 + 6
+            nMaxY = SC_CONTAINER..Y + LOOP_CONTENT..LineHeight * 2 + 6
+            
+            // Deceleration factor
+            rDeceleration = 0.0006
+            
+            // Calculates the speed of the move performed
+            rSpeed = Abs(nDist) / nMoveDuration
+            
+            // Defines the new distance to apply with the deceleration factor
+            nNewDist = (rSpeed * rSpeed) / (2 * rDeceleration) 
+            
+            // If the distance is positive (move the looper to the bottom) and if the new distance is greater than the authorized maximum
+            IF nDist > 0 _AND_ nNewDist > nMaxY THEN
+            	rOutDist = SC_CONTAINER..Height / (6 / (nNewDist / rSpeed * rDeceleration))
+            	nMaxY += rOutDist
+            	rSpeed = rSpeed * nMaxY / nNewDist		
+            	nNewDist = nMaxY
+            	
+            	// If the distance is negative (move the looper to the top) and if the new distance is greater than the authorized minimum
+            ELSE IF nDist < 0 _AND_ nNewDist < nYMIN THEN
+            	rOutDist = SC_CONTAINER..Height / (6 / (nNewDist / rSpeed * rDeceleration))
+            	nYMIN += rOutDist
+            	rSpeed = rSpeed * nYMIN / nNewDist
+            	nNewDist = nYMIN
+            END
+            
+            nNewDist = nNewDist * (nDist < 0 ? -1 ELSE 1)
+            nNewTime = Abs(Round(rSpeed / rDeceleration))
+            
+            IF nNewDist = 0 THEN RETURN
+            
+            LOOPTouchInfo.Animation = True
+            
+            // If the new calculated distance is too big
+            IF nNewDist < SC_CONTAINER..Y - LOOP_CONTENT..Height + LOOP_CONTENT..LineHeight * 1 + 6 _AND_ NOT LOOPInfinite THEN
+            	
+            	// "Truncate" it
+            	nNewDist = SC_CONTAINER..Y - LOOP_CONTENT..Height + LOOP_CONTENT..LineHeight * 1 + 6
+            	AnimationPlayOnControlProperty(LOOP_CONTENT, "Y", LOOP_CONTENT..Y, nNewDist, nNewTime / 100)
+            	
+            	// And reposition on the last possible element
+            	AnimationPlayOnControlProperty(LOOP_CONTENT, "Y", LOOP_CONTENT..Y, nYMIN)
+            ELSE
+            	
+            	// Plays the animation
+            	AnimationPlayOnControlProperty(LOOP_CONTENT, "Y", LOOP_CONTENT..Y, nNewDist, nNewTime / 10)	
+            END	
+            
+            LOOPTouchInfo.Animation = False
+           type : 458752
+         -
+           name : Tick
+           internal_properties : CAAAAAgAAAD4l71LPvZrzoJSd+nsOKvcw7YD8RkX/0kYzo15FSY83gwcMGjs9gpt/E2MoRYBRwFnkISipFrNhHbn5ObCnL6avXSRmXIEwvJ7cJIF9YrjqeTGRcCXL+KVcMdFkik7zfSULyWodira8RaL46Psk6jFyHLVcYA0C4SObfEUbwB07da0nxBePn1Eb6Y1+j/A9Yoap0C8LP2I1Ld8RoLhvUeH+mp1Ag==
+           procedure_id : 1632033584846485291
+           type_code : 14
+           code : |1-
+            // Summary: Plays the sound of the selection
+            // Syntax:
+            // Tick ()
+            //
+            // Parameters:
+            //	None
+            // Return value:
+            // 	None
+            //
+            PROCEDURE Tick()
+            
+            // If the sound is not enabled
+            IF SoundEnabled = False _OR_ LOOP_CONTENT..Occurrence = 0 THEN 
+            	RETURN
+            END
+            
+            dtNow is datetime
+            duDuration is duration
+            
+            // Duration since the last sound
+            dtNow 	= Today + Now
+            duDuration 		= dtNow - LOOPTickLastDH
+            
+            // If the previous sound was played
+            IF duDuration..InMilliseconds > 70 THEN
+            	Sound("Tock.wav")
+            END
+            
+            LOOPTickLastDH = dtNow
+           type : 458752
+         -
+           name : AddCacheRow
+           procedure_id : 1632033584846550827
+           type_code : 14
+           code : |1+
+            // Summary: Adds a row in cache
+            // Syntax:
+            // AddRow ()
+            //
+            // Parameters:
+            //	None
+            // Return value:
+            // 	None
+            //
+            PROCEDURE PRIVATE AddCacheRow(DisplayedValue, StroredValue, Status)
+            
+            {LOOPUp, indControl}..Visible = False
+            {LOOPDown, indControl}..Visible = False
+            
+            // Copies the data
+            LooperAddLine(LOOPUp, DisplayedValue, StroredValue, Status)
+            LooperAddLine(LOOPDown, DisplayedValue, StroredValue, Status)
+            
+            {LOOPUp, indControl}..Visible = LOOPInfinite
+            {LOOPDown, indControl}..Visible = LOOPInfinite
+           type : 458752
+         -
+           name : InfiniteMode
+           procedure_id : 1632033584846616363
+           type_code : 14
+           code : |1-
+            // Summary: Defines the infinite mode
+            // Syntax:
+            // InfiniteMode ()
+            //
+            // Parameters:
+            //	None
+            // Return value:
+            // 	None
+            //
+            PROCEDURE PRIVATE InfiniteMode(LOCAL bInfinite is boolean)
+            
+            LOOPInfinite = bInfinite
+            
+            {LOOPUp, indControl}..Visible	 = bInfinite
+            {LOOPDown, indControl}..Visible  = bInfinite
+           type : 458752
+        procedure_templates : []
+        property_templates : []
+     -
+       name : IMG_SHADOW
+       identifier : 0x26a625e60cb7372b
+       internal_properties : CAAAAAgAAAB2L4ZFACSLkJ2I2odKT883rB/AeulVTDxWybkDxoFZP4cxB0bE/I2xQm8NkdGawYDbKfYfQq+X5eKPwd6C962aMj4jdEsGWtjAaZMLyZQUzpLSpaB0rbqlKmzlR2Ljf6tgPjB3T9+fnwcqO3fLD7LLkRmNmRB4cUmTwNV81hMNbu0wNHTIwMs0lb8fNFT2o0zy5VutETvKCvpJoF8LRzZjQVxKo/0IVRW7AyONqC0ag/xBqjHr2a7Z97Gj8ff54XU32itFY35vOvRxWHtt9vAE257c1Rj9MnXFBqfI4qQbi0nuNTWtfmAchycVYN6NX/6jX10vNcnbA/QjPNQs4aRt2lZIglv+5yuM0vGHfkg9vQ1YAYSaQu4d/e7YnlbR5n4G9laNT6+8dws7FOHl97leJpt88Nnu4UlBhovhAxfpdKiUucPq4fJ8R2+MXxk6cskmMsk3ueYWvnkTxzo4crqjH8bu7anidMbXxS5D3GndHmDk15bP21otI6hPLtsaBpgIWJ0ycRyoyW6C27Fc2kbjbkLgWAU35YFnDchhCj6MIqYg6Ejl+dQYif+FT+Bh+4R8krxIGxJwermm1aMyHhV74a/arpMAogspTZIFAAqxRP0ziRVXHXq1emoGq4fnW7WRKqOdheEYnvO9uhGLe4E=
+       properties :
+        x : 34
+        y : 10
+        width : 252
+        height : 197
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           type : 18
+           enabled : false
+    type : 42
+    code_elements :
+     type_code : 92
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADucW9Tkfg0j1i8TgAhOXjrJGlbs1j0kNLSOqCl0fKY3aK4D+p+7YYcTaW9sxhcCkkPPHCF4p8u3j4BS99RonANHG4sn/+R+Zfprxa45fqv0NLw1u+eeJ57a4sqo7UK07gMj3uPKlSwtU/knLrGhraLWO+AYfDfl7eKsKqiEhZJDCuO57+MBLDxGRQuSeh147uq
+        code : |1-
+         
+         EXTERN "WINCONST.WL"
+         
+         // Structure used to store information
+         // When moving the roll with the mouse or 
+         // the finger (on a touchscreen interface)
+         TOUCHINFO is Structure
+         	
+         	// Origin of the click
+         	OriginX, OriginY		are int
+         	
+         	// Origin row of the click
+         	RowOrigin			is int
+         	
+         	// Previous position of the mouse (rollover) 
+         	PreviousX, PreviousY	are int
+         	
+         	// End of click
+         	EndX, EndY				are int
+         	
+         	// End row of the click
+         	RowEnd				is int
+         	
+         	// Indicates whether a move is in progress
+         	Move				is boolean
+         	
+         	// Indicates whether the mouse button is pressed (or a touch on the screen)
+         	Pressed					is boolean
+         	
+         	// Move direction
+         	Direction					is int
+         	
+         	// Instant of the click
+         	Timestamp				is datetime
+         	
+         	// Indicates whether an animation is in progress
+         	Animation				is boolean
+         	
+         	// Forces the position
+         	ForcePosition			is boolean
+         END
+         
+         // Parameter: Selection callback
+         CallbackSelect		is PROCEDURE
+         
+         // Parameter: True to return the stored value, False to return the selected subscript (by default)
+         ReturnStoredVal	is boolean = False
+         
+         // Parameter: True to enable the sound (by default), False to disable the sound
+         SoundEnabled			is boolean = True
+         
+         // Property: X of template
+         MyselfY			is int = 0// myself..Y
+         
+         // Property: Y of template
+         MyselfX			is int = 0//myself..X
+         
+         // List of roll columns
+         MyColumns			is ASSOCIATIVE ARRAY (ccIgnoreAccent + ccIgnoreCase + ccIgnorePunctuationAndSpace) of strings
+         MyControlColumns	is ASSOCIATIVE ARRAY of strings
+         
+         // Name of interactive area
+         TouchHandlerName		is string = "." + SC_CONTAINER.IMG_TOUCH..Name
+         
+         // Name of the looper
+         RollLOOPName		is string = "." + SC_CONTAINER.LOOP_CONTENT..Name
+         
+         // Name of looper attributes
+         StaticName			is string = "." + SC_CONTAINER.LOOP_CONTENT.STC_ELEMENT..Name
+         AttributeCaption		is string = "." + SC_CONTAINER.LOOP_CONTENT.ATT_ELEMENT_CAPTION..Name
+         AttributeValue		is string = "." + SC_CONTAINER.LOOP_CONTENT.ATT_STORED_VAL..Name
+         AttributeStatus		is string = "." + SC_CONTAINER.LOOP_CONTENT.ATT_STATUS..Name
+         
+         // Manages the mouse wheel
+         Event(__OnMouseWheel, ".*", WM_MOUSEWHEEL)
+         Event(__OnMouseWheel, WinInput, WM_MOUSEWHEEL)
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         // <Control Template control>..Value = <Value>
+         // <Value>: New value for the rolls, string list in the following format: <Value Roll 1> [TAB <Value Roll 2> ...]
+         PROCEDURE Assignment(sEnterVal is string)
+         
+         i is int
+         
+         // For each column
+         FOR EACH sColumnName of MyColumns		
+         	
+         	// Assigns the new value
+         	i ++
+         	{sColumnName, indControl}..DisplayEnabled = False
+         	{sColumnName, indControl}..Value = Val(ExtractString(sEnterVal, i))
+         	{sColumnName, indControl}..DisplayEnabled = True
+         END
+        type : 43
+      -
+        code : |1-
+         // <Value> = <Control Template control>..Value
+         // <Value>: Value for the rolls, string list in the following format: <Value Roll 1> [TAB <Value Roll 2> ...]
+         
+         sColumnName is string
+         sReturnVal	is string
+         
+         // For each column
+         FOR EACH sColumnName of MyColumns
+         	
+         	// Fills the list with the value
+         	sReturnVal += [TAB] + {sColumnName, indControl}..Value
+         END
+         
+         RESULT sReturnVal
+        type : 42
+      -
+        code : |1-
+         
+         // Keeps the new position
+         MyselfY = 0//myself..Y
+         MyselfX = 0//myself..X
+        type : 65539
+      -
+        code : |1-
+         
+         // Manages the change of size
+         __OnSizeChange()
+        type : 65541
+ menu :
+  name : _Menu
+  identifier : 0x2e71c36eada93ea8
+  internal_properties : CAAAAAgAAAAjoO+VYAXYh2SYpTvD7AgXCHEHRjuTd5K/qNR3zUpM1aIlQYejrbtK76/LWLozAhgdmcRuoxDXe7vi3lf8PoZYYzNtPYlgCK9AarNrSCSSPpGDp+KLIikSwO2L+lCfwFobS8WKQZu2noN9WV5ipxuLKjTaOvfojbcmu1i6FPrF8FEPa+oQBHdRyMYNLYyLF/nTGn2y7NBixG5dC7y2wsO4aXA1CKpzZUca8sBJUrSr9FqhTJMK37pOOZqMTeCIo+trbOMI1osTdzjD26auXrzETrP8OxsAt+HgvahLwDb4kRpR6lQOjBIj
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 91
+  p_codes : []
+  procedures :
+   -
+     name : ColumnAdd
+     internal_properties : CAAAAAgAAADuX8E5rxIMQR7Cf5ifmXu+uHHGhQon2byVS5oE8IGQV5YTMfGHe4HU2db7+ciA5hl8O1VQupQ1RJPzwCrDgs3QtaOnEJS6o8ajrJIdX7JbcLckf8I5vEsQEnzJyvcqywqvvJad/rMiWZ5iytE1
+     procedure_id : 1632033584844912427
+     type_code : 14
+     code : |1-
+      // Summary: Adds a column to the roll
+      // Syntax:
+      //[ <Result> = ] ColumnAdd (<sName> is string [, <nAnchor> is int [, <nSize> is int]])
+      //
+      // Parameters:
+      //	sName (string): Name of the column to create
+      //	nAnchor (integer - default value=10): Anchor to apply
+      //	nSize (integer): Size of the column if the anchor is fixed
+      // Return value:
+      // 	boolean: True if the column was created, False otherwise
+      //
+      PROCEDURE ColumnAdd(LOCAL sName is string, LOCAL nAnchoring is int = rollAnchorWidth, LOCAL nSize is int = (SC_CONTAINER..Width))
+      
+      sColumnName 	is string
+      nX				is int
+      nAnchorRate	is int = 1000
+      nNbAnchored		is int
+      nWidth		is int = IMG_SHADOW..Width
+      nColumn		is int
+      bInfinite			is boolean
+      
+      // Checks the type
+      IF NOT nAnchoring IN (rollAnchorWidth, rollFixedSize, rollAnchorWidth + rollInfinire, rollFixedSize + rollInfinire) THEN
+      	RESULT False
+      END
+      
+      bInfinite  = (nAnchoring & rollInfinire = rollInfinire)
+      nAnchoring = (bInfinite ? nAnchoring - rollInfinire ELSE nAnchoring)
+      
+      // If the column does not already exist
+      IF MyColumns[sName]..Empty THEN
+      	
+      	// Defines the available space
+      	FOR EACH sColumnName of MyColumns
+      		
+      		nColumn ++
+      		
+      		// If the column is anchored in width
+      		IF {sColumnName + ".LOOPAnchoring", indVariable} = rollAnchorWidth THEN
+      			
+      			// Counts the number of anchored columns
+      			nNbAnchored++
+      		ELSE
+      			
+      			// If the column is fixed, reduces the total assignable width
+      			nWidth -= {sColumnName, indControl}..Width
+      		END
+      	END
+      	
+      	// The remaining size cannot be exceeded
+      	IF nSize > nWidth THEN
+      		nSize = nWidth
+      	END
+      	
+      	// If the anchor of the new column is not fixed
+      	IF nAnchoring = rollAnchorWidth THEN
+      		nNbAnchored ++
+      	ELSE
+      		nWidth -= nSize
+      	END
+      	
+      	// If the available size is reduced
+      	IF nWidth < 32 * nNbAnchored THEN
+      		nSize -= (32 * nNbAnchored) - nWidth
+      		nWidth = 32 * nNbAnchored
+      	END
+      	
+      	// If there is no available space
+      	IF nWidth = 0 THEN
+      		RESULT False
+      	END
+      	
+      	// Defines the position of the new column
+      	FOR EACH sColumnName of MyColumns
+      		
+      		IF nX > 0 THEN
+      			{sColumnName, indControl}..X 	= nX + IMG_SHADOW..X + 1
+      		END
+      		
+      		// Resizes the anchored columns
+      		IF {sColumnName + ".LOOPAnchoring", indVariable} = rollAnchorWidth THEN
+      			{sColumnName, indControl}..Width = nWidth / nNbAnchored
+      		END
+      		
+      		nX += {sColumnName, indControl}..Width 	
+      	END
+      	
+      	// Repositions in relation to the image
+      	nX += IMG_SHADOW..X + 1
+      	
+      	// Creates the column
+      	sColumnName = "SC_" + GetGUID(guidRough)
+      	ControlClone(SC_CONTAINER, sColumnName)
+      	
+      	// Stores the created column
+      	MyColumns[sName] = sColumnName
+      	MyControlColumns[sColumnName] = sName
+      	
+      	// Makes the column visible
+      	{sColumnName + ".LOOPAnchoring", indVariable} 			= nAnchoring
+      	{sColumnName, indControl}..X = nX - MyselfX
+      	{sColumnName, indControl}..Y -= 1 - MyselfY
+      	{sColumnName, indControl}..ZOrder = SC_CONTAINER..ZOrder + 1
+      	ExecuteProcess(sColumnName + ".InfiniteMode", trtProcedure, bInfinite)
+      	
+      	IF nAnchoring = rollFixedSize THEN
+      		{sColumnName, indControl}..Width  = nSize
+      	END		
+      	
+      	// Re-positions the controls
+      	__OnSizeChange()
+      	
+      	// Displays 
+      	{sColumnName, indControl}..Visible = True
+      	
+      	RESULT True
+      ELSE
+      	RESULT False
+      END
+     type : 458752
+   -
+     name : ColumnDelete
+     procedure_id : 1632033584844977963
+     type_code : 14
+     code : |1-
+      // Summary: Deletes a column from the roll
+      // Syntax:
+      //[ <Result> = ] ColumnDelete (<sName> is string)
+      //
+      // Parameters:
+      //	sName (string): Name of the column to delete
+      // Return value:
+      // 	boolean: True if the column was deleted, False otherwise
+      //
+      PROCEDURE ColumnDelete(LOCAL sName is string)
+      
+      // Checks whether the column exists
+      IF MyColumns[sName]..Empty THEN
+      	RESULT False
+      END
+      
+      // Deletes the column
+      ControlDelete(MyColumns[sName])
+      Delete(MyControlColumns, MyColumns[sName])
+      Delete(MyColumns, sName)
+      
+      RESULT True
+     type : 458752
+   -
+     name : __OnSizeChange
+     internal_properties : CAAAAAgAAADiYz01qx5Srba293C/9Xt2+EUqpXonuRC1jxrEGFUAT3437XGHQ+lYeapz4eicTsmkn7FQKnyvEk29wjzZkK8ip30Vuuoo3fyFRsQnHbBVWsF+HaRnqn3e/B5rPF0I9TxhXsx/JKEeVZpuxt05
+     procedure_id : 1632033584845043499
+     type_code : 14
+     code : |1+
+      // Summary: Processes the change of size
+      // Syntax:
+      // __OnSizeChange ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PRIVATE __OnSizeChange()
+      
+      nNbAnchored is int
+      nWidth   is int = IMG_SHADOW..Width
+      nX		   is int
+      
+      // For each column
+      FOR EACH sColumnName of MyColumns
+      	
+      	// Disables the display
+      	{sColumnName, indControl}..DisplayEnabled = False
+      END
+      
+      // For each column
+      FOR EACH sColumnName of MyColumns
+      	
+      	// If the column is anchored in width
+      	IF {sColumnName + ".LOOPAnchoring", indVariable} = rollAnchorWidth THEN
+      		
+      		// Counts the number of anchored columns
+      		nNbAnchored++
+      	ELSE
+      		
+      		// If the column is fixed, reduces the total assignable width
+      		nWidth -= {sColumnName, indControl}..Width
+      	END
+      END
+      
+      // For each column
+      FOR EACH sColumnName of MyColumns
+      	
+      	// If a total was already performed on the position
+      	IF nX > 0 THEN
+      		
+      		// Moves the column
+      		{sColumnName, indControl}..X 	= nX + IMG_SHADOW..X + 1
+      	END
+      	
+      	// Resizes the anchored columns
+      	IF {sColumnName + ".LOOPAnchoring", indVariable} = rollAnchorWidth THEN
+      		{sColumnName, indControl}..Width = nWidth / nNbAnchored
+      	END
+      	
+      	// Cumulates the position
+      	nX += {sColumnName, indControl}..Width 	
+      END
+      
+      // For each column
+      FOR EACH sColumnName of MyColumns
+      	
+      	// Re-enables the display
+      	{sColumnName, indControl}..DisplayEnabled = True
+      END
+     type : 458752
+   -
+     name : __OnMouseWheel
+     procedure_id : 1632033584845109035
+     type_code : 14
+     code : |1-
+      // Summary: Manages the wheel
+      // Syntax:
+      //__OnMouseWheel ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PRIVATE __OnMouseWheel()
+      
+      nRow			is int
+      sColumnName 	is string
+      sColumn 		is string
+      nX				is int = MouseXPos
+      nY				is int = MouseYPos
+      nDirection 			is int = (HiWord(_EVE.wParam) / 120)
+      
+      // The retrieved coordinates are expressed in screen coordinates, 
+      // we bring them back to the control template
+      nX -= WinInXPos - MyselfX
+      nY -= WinInYPos - MyselfY
+      
+      // For each existing column
+      FOR EACH sColumnName, sColumn of MyColumns
+      	
+      	// If the column is hovered
+      	IF {sColumnName + TouchHandlerName, indControl}..X <= nX < {sColumnName + TouchHandlerName, indControl}..X + {sColumnName + TouchHandlerName, indControl}..Width THEN	 
+      		
+      		// Retrieves the current row
+      		nRow = __RowFromRadioButton(sColumn)
+      		
+      		// Increments or decrements the row number according to the direction
+      		nRow -= nDirection
+      		
+      		// Move on the row
+      		__ScrollTo(sColumnName, nRow, -nDirection)				
+      		
+      		_EVE.Return = False
+      		BREAK
+      	END
+      END
+     type : 458752
+   -
+     name : ColumnAddRow
+     internal_properties : CAAAAAgAAABO/2GZF1LUQV4CP5j/mRs++BHGxWqHGTxVS9pE0MFwl9azcfHn24GUmVY7eWiABpm8m5VQ2jQF9GMD8Przkr3AhZP3IGTKc/azPMItD4ILoEdUDxIJzJsAIkw5Wqe6u3r/LGZtTkPqMf4CanGV
+     procedure_id : 1632033584845174571
+     type_code : 14
+     code : |1+
+      // Summary: Adds a row into a column
+      // Syntax:
+      //[ <Result> = ] ColumnAddRow (<sColumn> is string, <sDisplayedValue> is string [, <vStoredValue> is variant])
+      //
+      // Parameters:
+      //	sColumn (string): Column into which a row must be added
+      //	sDisplayedValue (string): Displayed value
+      //	vStoredValue (variant - default value=0): Stored value
+      // Return value:
+      // 	integer: Subscript of the row added into the column or -1 if an error occurred
+      //
+      PROCEDURE ColumnAddRow(LOCAL sColumn is string, LOCAL sDisplayedValue is string, LOCAL vStoredValue is variant = Null)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Adds the row
+      ExecuteProcess(sColumnName + ".AddCacheRow", trtProcedure, sDisplayedValue, vStoredValue, Active)
+      RETURN = LooperAddLine(sColumnName + RollLOOPName, sDisplayedValue, vStoredValue, Active)
+      
+      // Total height of the looper
+      {sColumnName + RollLOOPName, indControl}..Height = {sColumnName + RollLOOPName, indControl}..LineHeight * {sColumnName + RollLOOPName, indControl}..Occurrence
+     type : 458752
+   -
+     name : ColumnDeleteRow
+     internal_properties : CAAAAAgAAABO/2GZF1LUQV4CP5j/mRs++BHGxWqHGTxVS9pE0MFwl9azcfHn24GUmVY7eWiABpm8m5VQ2jQF9GMD8Przkr3AhZP3IGTKc/azPMItD4ILoEdUDxIJzJsAIkw5Wqe6u3r/LGZtTkPqMf4CanGV
+     procedure_id : 1632033584845240107
+     type_code : 14
+     code : |1-
+      // Summary: Deletes a row from a column
+      // Syntax:
+      //[ <Result> = ] ColumnDeleteRow (<sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	sColumn (string): Column into which a row must be added
+      //	nRow (integer): Row to delete
+      // Return value:
+      // 	boolean: True if the row was deleted, False otherwise
+      //
+      PROCEDURE ColumnDeleteRow(LOCAL sColumn is string, LOCAL nRow is int)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT False
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Adds the row
+      LooperDelete(sColumnName + RollLOOPName, nRow)
+      LooperDelete(sColumnName + {sColumnName + ".LOOPUp", indVariable}, nRow)
+      LooperDelete(sColumnName + {sColumnName + ".LOOPDown", indVariable}, nRow)
+      
+      // Total height of the looper
+      {sColumnName + RollLOOPName, indControl}..Height = {sColumnName + RollLOOPName, indControl}..LineHeight * {sColumnName + RollLOOPName, indControl}..Occurrence
+      
+      RESULT True
+     type : 458752
+   -
+     name : ColumnModifyRow
+     internal_properties : CAAAAAgAAACunwF5jzTOQR7Cf5ifmXu+uHHGhQon2byVS5oE8IGQV5YTMfGHe4HU2db7+ciA5hl8O1VQupS1xBNzQKpDAk1QNSMnkBQ6I0YjLBKd3zLb8Dek/0K5PMuQkvxJSneqS4ovPBYdfjPguV6iihF1
+     procedure_id : 1632033584845305643
+     type_code : 14
+     code : |1-
+      // Summary: Adds a row into a column
+      // Syntax:
+      //[ <Result> = ] ColumnModifyRow(<sColumn> is string, <nRow> is int [, <sDisplayedValue> is string [, <vStoredValue> is variant]])
+      //
+      // Parameters:
+      //	sColumn (string): Column in which a row must be modified
+      //	nRow (integer): Number of the row to modify
+      //	sDisplayedValue (string - default value=""): New displayed value
+      //	vStoredValue (variant - default value=0): New stored value
+      // Return value:
+      // 	boolean: True if the row was modified, False otherwise
+      //
+      PROCEDURE ColumnModifyRow(LOCAL sColumn is string, LOCAL nRow is int, LOCAL sDisplayedValue is string = ESC, LOCAL vStoredValue is variant = Null)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT False
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // If the row is valid
+      IF nRow > 0 _AND_ nRow <= {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	
+      	IF NOT MyParameters[3]..Default THEN {sColumnName + RollLOOPName + AttributeCaption, indControl}[nRow] 	= sDisplayedValue
+      	IF NOT MyParameters[4]..Default THEN {sColumnName + RollLOOPName + AttributeValue, indControl}[nRow] 	= vStoredValue
+      	
+      	// Total height of the looper
+      	{sColumnName + RollLOOPName, indControl}..Height = {sColumnName + RollLOOPName, indControl}..LineHeight * {sColumnName + RollLOOPName, indControl}..Occurrence
+      	
+      	RESULT True
+      END
+      
+      RESULT False
+     type : 458752
+   -
+     name : ColumnModify
+     procedure_id : 1632033584845371179
+     type_code : 14
+     code : |1-
+      // Summary: Deletes a column from the roll
+      // Syntax:
+      //[ <Result> = ] ColumnModify (<sColumn> is string, <nAnchor> is int [, <nSize> is int])
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column to delete
+      //	nAnchor (integer): New anchor for the column
+      // 	nSize (integer - default value=0): New size for the column if its anchoring is fixed
+      // Return value:
+      // 	boolean: True if the column was deleted, False otherwise
+      //
+      PROCEDURE ColumnModify(LOCAL sColumn is string, LOCAL nAnchoring is int, LOCAL nSize is int = 0)
+      
+      sColumnName is string
+      nColumn	is int
+      nNbAnchored	is int
+      nWidth	is int = IMG_SHADOW..Width
+      
+      // Checks whether the column exists
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT False
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Modifies the anchor
+      {sColumnName + ".LOOPAnchoring", indVariable} = nAnchoring
+      
+      // If we switch to a fixed size
+      IF nAnchoring = rollFixedSize THEN
+      	
+      	// Defines the available space
+      	FOR EACH sNameColumn2 of MyColumns
+      		
+      		IF sColumnName = sNameColumn2 THEN CONTINUE
+      		
+      		nColumn ++
+      		
+      		// If the column is anchored in width
+      		IF {sNameColumn2 + ".LOOPAnchoring", indVariable} = rollAnchorWidth THEN
+      			
+      			// Counts the number of anchored columns
+      			nNbAnchored++
+      		ELSE
+      			
+      			// If the column is fixed, reduces the total assignable width
+      			nWidth -= {sNameColumn2, indControl}..Width
+      		END
+      	END
+      	
+      	// The remaining size must not be exceeded
+      	IF nSize > nWidth THEN
+      		nSize = nWidth
+      	END
+      	
+      	{sColumnName, indControl}..Width = nSize
+      END
+      
+      // Recalculates the positions
+      __OnSizeChange()
+      
+      RESULT True
+     type : 458752
+   -
+     name : ColumnRowSelect
+     procedure_id : 1632033584845436715
+     type_code : 14
+     code : |1-
+      // Summary: Modifies the selected row in a column
+      // Syntax:
+      //ColumnRowSelect (<sColumn> is string, <nRow> is int [, <bAnimation> is boolean])
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the selected row
+      // 	bAnimation (boolean - default value=0): True to play the selection animation, False otherwise (by default)
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ColumnRowSelect(LOCAL sColumn is string, LOCAL nRow is int, LOCAL bAnimation is boolean = False)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RETURN
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // If the row is valid
+      IF nRow > 0 _AND_ nRow <= {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	
+      	// Move on the row
+      	__ScrollTo(sColumnName, nRow, 1, bAnimation, *, *, True)
+      END
+     type : 458752
+   -
+     name : ColumnRowSelect
+     procedure_id : 1632033584845436715
+     type_code : 14
+     code : |1-
+      // Summary: Returns the selected row in a column
+      // Syntax:
+      // ColumnRowSelect (<sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	integer: Number of the selected row
+      //
+      PROCEDURE ColumnRowSelect(LOCAL sColumn is string)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      RESULT {sColumnName + RollLOOPName, indControl}
+     type : 458753
+   -
+     name : ColumnList
+     procedure_id : 1632033584845502251
+     type_code : 14
+     code : |1-
+      // Summary: Returns the list of columns
+      // Syntax:
+      //[ <Result> = ] ColumnList ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	string: List of columns in the following format: <Name Column 1> [CR <Name Column 2> ... [CR <Name Column N>]]
+      //
+      PROCEDURE ColumnList()
+      
+      sColumnName is string
+      sListBox 		is string
+      
+      // For each column
+      FOR EACH sColumnName of MyColumns
+      	sListBox += [CR] + sColumnName
+      END
+      
+      RESULT sListBox
+     type : 458752
+   -
+     name : ColumnOccurrence
+     procedure_id : 1632033584845567787
+     type_code : 14
+     code : |1-
+      // Summary: Returns the number of columns
+      // Syntax:
+      //[ <Result> = ] ColumnOccurrence ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	integer: Number of columns
+      //
+      PROCEDURE ColumnOccurrence()
+      RESULT MyColumns..Occurrence
+     type : 458752
+   -
+     name : ColumnRowOccurrence
+     procedure_id : 1632033584845633323
+     type_code : 14
+     code : |1-
+      // Summary: Returns the number of rows in a column
+      // Syntax:
+      //[ <Result> = ] ColumnRowOccurrence (<sColumn> is string)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	integer: Number of rows in the column or -1 if an error occurred
+      //
+      PROCEDURE ColumnRowOccurrence(LOCAL sColumn is string)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      RESULT LooperCount(sColumnName + RollLOOPName)
+     type : 458752
+   -
+     name : ColumnDeleteAllRows
+     internal_properties : CAAAAAgAAAAiI/31M3523c6OvxgHveNe2DUqdVonAciFr9oU6DUAL2ZvNamP25l4YbILeVB0FpGEj7HQemyjBlEJhmhtDCuu6wlRRmacgRD58gjjwfwBhlV6GTDjzmFCcJq/mKGUYZiFqujrwNWGTdouBp35
+     procedure_id : 1632033584845698859
+     type_code : 14
+     code : |1-
+      // Summary: Deletes all the rows from a column
+      // Syntax:
+      //[ <Result> = ] ColumnDeleteAllRows (<sColumn> is string)
+      //
+      // Parameters:
+      //	sColumn (string): Column to clear
+      // Return value:
+      // 	boolean: True if the deletion was performed, False otherwise
+      //
+      PROCEDURE ColumnDeleteAllRows(LOCAL sColumn is string)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT False
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Adds the row
+      LooperDeleteAll(sColumnName + RollLOOPName)
+      LooperDeleteAll(sColumnName + {sColumnName + ".LOOPUp", indVariable})
+      LooperDeleteAll(sColumnName + {sColumnName + ".LOOPDown", indVariable})
+      
+      // Total height of the looper
+      {sColumnName + RollLOOPName, indControl}..Height = {sColumnName + RollLOOPName, indControl}..LineHeight * {sColumnName + RollLOOPName, indControl}..Occurrence
+      
+      RESULT True
+     type : 458752
+   -
+     name : ColumnDeleteAll
+     procedure_id : 1632033584845764395
+     type_code : 14
+     code : |1-
+      // Summary: Deletes all the columns
+      // Syntax:
+      //ColumnDeleteAll ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ColumnDeleteAll()
+      
+      sColumnName is string
+      
+      // Deletes the controls
+      FOR EACH sColumnName of MyColumns
+      	ControlDelete(sColumnName)		
+      END
+      
+      // Deletes all the columns
+      DeleteAll(MyColumns)
+      DeleteAll(MyControlColumns)
+     type : 458752
+   -
+     name : ColumnFont
+     procedure_id : 1632033584845829931
+     type_code : 14
+     code : |1-
+      // Summary: Applies a character font to a column
+      // Syntax:
+      //[ <Result> = ] ColumnFont (<sColumn> is string, <fntFont> is font)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	fntFont (font): New font
+      // Return value:
+      // 	boolean: True if the font was modified, False otherwise
+      //
+      PROCEDURE ColumnFont(LOCAL sColumn is string, LOCAL fntFont is font)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT False
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Modifies the font
+      {sColumnName + RollLOOPName + StaticName, indControl}..Font 				= fntFont
+      {{sColumnName + ".LOOPUp", indVariable} + StaticName, indControl}..Font 		= fntFont
+      {{sColumnName + ".LOOPDown", indVariable} + StaticName, indControl}..Font 	= fntFont
+      
+      RESULT True
+     type : 458752
+   -
+     name : ColumnFont
+     procedure_id : 1632033584845829931
+     type_code : 14
+     code : |1-
+      // Summary: Returns the character font of a column
+      // Syntax:
+      // [ <Result> = ] ColumnFont (<sColumn> is string, <fntFont> is font)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	font: Font of the column or Null if an error occurred
+      //
+      PROCEDURE ColumnFont(LOCAL sColumn is string)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT Null
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Returns the font
+      RESULT {sColumnName + RollLOOPName + StaticName, indControl}..Font
+     type : 458753
+   -
+     name : EnableSound
+     procedure_id : 1632033584845895467
+     type_code : 14
+     code : |1-
+      // Summary: Enables/Disables the sound effects
+      // Syntax:
+      //EnableSound ([<bActive> is boolean])
+      //
+      // Parameters:
+      //	bActive (boolean - default value=1): True to enable the sound effects, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE EnableSound(LOCAL bEnabled is boolean = True)
+      SoundEnabled = bEnabled
+     type : 458752
+   -
+     name : __ScrollTo
+     internal_properties : CAAAAAgAAACo28rzXjDVjmwiN0R3VoKRgc3G+8IkGhEdZ8M0KNcRQYXw0718mqtOzi0EkNpy2bbbWL4h2NlYWwIRYnq1tQvxDJUsZS8oSdobAl1V+wFARsLuFYlrWcbR2ufbXCZtQ/OvVO0pxVg9ypj0KMS+Qub6OXV2ehFXOdOSa8fRcvnx+xSgKCXVu+Tt6Ssh2UhluUsn2NSmwvqGx7jL0LqgRLFm9feYT3/YEOiwz12yTJ0g31FUzWQtCXivHUbAMR2qCZayXbxAd6ZjqAHv7r9OqZBYQ9KVMnIraMH8SUTxlRuL2jjUgbyVQ4mY
+     procedure_id : 1632033584845961003
+     type_code : 14
+     code : |1-
+      // Summary: Moves a column on the specified row
+      // Syntax:
+      //__ScrollTo (<sColumnName> is string, <nRow> is int, <nDirection> is int [, <bAnimation> is boolean [, <bSound> is boolean [, <bWithoutSelection> is boolean [, <bForceSelection> is boolean]]]])
+      //
+      // Parameters:
+      //	sColumnName (string): Name of the column
+      //	nRow (integer): Row number
+      //	nDirection (integer): Initial direction of the move
+      //	bAnimation (boolean - default value=1): True to perform an animation, False otherwise
+      //	bSound (boolean - default value=1): True to enable the sound of the selection, False otherwise
+      //	bWithoutSelection (boolean - default value=0): <specify the role of bWithoutSelection>
+      // 	bForceSelection (boolean - default value=0): <specify the role of bForceSelection>
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PRIVATE __ScrollTo(LOCAL sColumnName is string, LOCAL nRow is int, LOCAL nDirection is int, LOCAL bAnimation is boolean = True, LOCAL bSound is boolean = True, LOCAL bWithoutSelection is boolean = False, LOCAL bForceSelection is boolean = False)
+      
+      nY 				is int
+      bTick			is boolean
+      nCurrentRow	is int = {sColumnName + RollLOOPName, indControl}
+      bInfinite		is boolean = {sColumnName + ".LOOPInfinite", indVariable}
+      
+      // Lower bound
+      IF NOT bInfinite _AND_ nRow < 1 THEN
+      	nRow = 1
+      	nDirection = -nDirection
+      	
+      	// In infinite mode, re-loop
+      ELSE IF bInfinite _AND_ nRow < 1 THEN
+      	
+      	// Moves the looper of an entire page
+      	{sColumnName + ".LOOPTouchInfo.ForcePosition", indVariable} = True
+      	{sColumnName + RollLOOPName, indControl}..Visible = False
+      	{sColumnName + RollLOOPName, indControl}..Y -= {sColumnName + RollLOOPName, indControl}..Height 
+      	{sColumnName + RollLOOPName, indControl}..Visible = True
+      	{sColumnName + ".LOOPTouchInfo.ForcePosition", indVariable} = False
+      	
+      	// And go back to the end of the looper
+      	nRow = {sColumnName + RollLOOPName, indControl}..Occurrence + nRow
+      END
+      
+      // Upper bound
+      IF NOT bInfinite _AND_ nRow > {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	nRow = {sColumnName + RollLOOPName, indControl}..Occurrence
+      	nDirection = -nDirection
+      	
+      	// In infinite mode, re-loop
+      ELSE IF bInfinite _AND_ nRow > {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	
+      	// Moves the looper of an entire page
+      	{sColumnName + ".LOOPTouchInfo.ForcePosition", indVariable} = True
+      	{sColumnName + RollLOOPName, indControl}..Visible = False
+      	{sColumnName + RollLOOPName, indControl}..Y += {sColumnName + RollLOOPName, indControl}..Height// + 1 
+      	{sColumnName + RollLOOPName, indControl}..Visible = True
+      	{sColumnName + ".LOOPTouchInfo.ForcePosition", indVariable} = False
+      	
+      	// And go back to 1
+      	nRow = nRow - {sColumnName + RollLOOPName, indControl}..Occurrence
+      END
+      
+      // Invalid line
+      IF NOT 0 < nRow <= {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	RETURN
+      END
+      
+      // If the row to display is not active
+      IF {sColumnName + RollLOOPName + AttributeStatus, indControl}[nRow] <> Active THEN
+      	
+      	// Move to the next or previous row according to the move direction
+      	__ScrollTo(sColumnName, nRow + nDirection, nDirection, bAnimation, bSound, bWithoutSelection)
+      	RETURN
+      END
+      
+      // If the row differs from the current one
+      IF nRow <> nCurrentRow _AND_ NOT bWithoutSelection THEN
+      	
+      	// Keeps the row
+      	{sColumnName + ".LOOPTouchInfo.RowEnd", indVariable} 	= nRow
+      	{sColumnName + RollLOOPName, indControl} 		   	  	= {sColumnName + ".LOOPTouchInfo.RowEnd", indVariable}
+      	bTick = True
+      END
+      
+      // Calculates the standard position of the selected row
+      nY = SC_CONTAINER..Y + {sColumnName + RollLOOPName, indControl}..LineHeight * 3 + 6 - {sColumnName + RollLOOPName, indControl}..LineHeight * nRow
+      
+      // Repositions at the proper location
+      IF bAnimation THEN
+      	AnimationPlayOnControlProperty(sColumnName + RollLOOPName, "Y", {sColumnName + RollLOOPName, indControl}..Y, nY, 15)
+      ELSE
+      	{sColumnName, indControl}..Visible = False
+      	{sColumnName + RollLOOPName, indControl}..Y = nY
+      	{sColumnName, indControl}..Visible = True
+      END
+      
+      IF bTick _AND_ bSound THEN
+      	ExecuteProcess(sColumnName + ".Tick", trtProcedure)
+      END
+      
+      // Calls the user callback
+      IF (bTick _OR_ nRow <> nCurrentRow _OR_ bForceSelection) _AND_ CallbackSelect <> Null THEN
+      	WHEN EXCEPTION IN
+      		CallbackSelect((MyControlColumns[sColumnName]), (nRow))
+      	DO
+      	END
+      END
+     type : 458752
+   -
+     name : ColumnRowStatus
+     procedure_id : 1632033584846026539
+     type_code : 14
+     code : |1-
+      // Summary: Modifies the status of a row
+      // Syntax:
+      //ColumnRowStatus (<sColumn> is string, <nRow> is int, <nStatus> is int)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      //	nStatus (integer): New status (Active, Inactive)
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ColumnRowStatus(LOCAL sColumn is string, LOCAL nRow is int, LOCAL nStatus is int)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RETURN
+      END
+      
+      IF NOT nStatus IN (Active, Inactive) THEN
+      	RETURN
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Modifies the status
+      {sColumnName + RollLOOPName + AttributeStatus, indControl}[nRow] = nStatus
+      
+      // Re-selects if necessary
+      IF nRow = __RowFromRadioButton(sColumn) THEN
+      	__ScrollTo(sColumnName, nRow, 1, False, False, True)
+      END
+     type : 458752
+   -
+     name : ColumnRowStatus
+     procedure_id : 1632033584846026539
+     type_code : 14
+     code : |1-
+      PROCEDURE ColumnRowStatus(LOCAL sColumn is string, LOCAL nRow is int)
+      
+      sColumnName is string
+      nStatus		is int
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Retrieves the status
+      nStatus = {sColumnName + RollLOOPName + AttributeStatus, indControl}[nRow]
+      
+      RESULT nStatus 
+     type : 458753
+   -
+     name : SelectionCallbackDefine
+     internal_properties : CAAAAAgAAACImkxmISeTH73M5CY5TCfbhqwpKmiLT6uzoL7NQd3o5Dods/YIhzcB2U0PdjdezAbDnAL5HT6BBTRAM0SzEEjSscHH4Q4j2Md/PmcLV6pW2NgIt2nCoRPzbu9wQbIdDph3e/NX7dZf13RLjIRB31MD/Z4jwB/Ydtwyu5BRcqTdqSQbFEpcszVPnj8vCkfp7GO1+TgVLQ==
+     procedure_id : 1632033584846092075
+     type_code : 14
+     code : |1-
+      // Summary: Defines the selection callback
+      // Syntax:
+      //SelectionCallbackDefine (<pProcedure> is procedure)
+      //
+      // Parameters:
+      //	pProcedure (procedure): User procedure
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SelectionCallbackDefine(pProcedure is PROCEDURE)
+      CallbackSelect = pProcedure
+     type : 458752
+   -
+     name : ColumnRowDisplayedValue
+     procedure_id : 1632033584846157611
+     type_code : 14
+     code : |1-
+      // Summary: Returns the displayed value of a column row
+      // Syntax:
+      //[ <Result> = ] ColumnRowDisplayedValue (<sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      // Return value:
+      // 	Undefined type: Displayed value
+      //
+      PROCEDURE ColumnRowDisplayedValue(LOCAL sColumn is string, LOCAL nRow is int)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT ""
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // If the row is valid
+      IF nRow > 0 _AND_ nRow <= {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	
+      	// Move on the row
+      	RESULT {sColumnName + RollLOOPName + AttributeCaption, indControl}[nRow]
+      END
+      
+      RESULT ""
+     type : 458752
+   -
+     name : ColumnRowStoredValue
+     procedure_id : 1632033584846223147
+     type_code : 14
+     code : |1-
+      // Summary: Returns the stored value of a column row
+      // Syntax:
+      //[ <Result> = ] ColumnRowStoredValue (<sColumn> is string, <nRow> is int)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	nRow (integer): Number of the row
+      // Return value:
+      // 	Undefined type: Stored value
+      //
+      PROCEDURE ColumnRowStoredValue(LOCAL sColumn is string, LOCAL nRow is int)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT ""
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // If the row is valid
+      IF nRow > 0 _AND_ nRow <= {sColumnName + RollLOOPName, indControl}..Occurrence THEN
+      	
+      	// Move on the row
+      	RESULT {sColumnName + RollLOOPName + AttributeValue, indControl}[nRow]
+      END
+      
+      RESULT ""
+     type : 458752
+   -
+     name : ColumnFind
+     procedure_id : 1632033584846288683
+     type_code : 14
+     code : |1-
+      // Summary: Finds an element in a column
+      // Syntax:
+      //[ <Result> = ] ColumnFind (<sColumn> is string, <vSearch> [, <bIdentical> is boolean [, <nSearchType> is int [, <nStart> is int]]])
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      //	vSearch: Sought element
+      //	bIdentical (boolean - default value=1): True to perform an exact-match search, False otherwise
+      // 	nSearchType (integer - default value=1): <specify the role of nSearchType>
+      //	nStart (integer - default value=0): Start subscript for the search
+      // Return value:
+      // 	integer: Sought subscript
+      //
+      PROCEDURE ColumnFind(LOCAL sColumn is string, LOCAL vSearch, LOCAL bIdentical is boolean = True, LOCAL nRequestedType is int = rccStoredValue, LOCAL nStart is int = 1)
+      
+      sColumnName is string
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      SWITCH nRequestedType
+      
+      	// Displayed values
+      	CASE rccDisplayedValue
+      		// Returns the result of the search
+      		RESULT LooperSeek(sColumnName + RollLOOPName + AttributeCaption, vSearch, bIdentical, nStart)
+      		
+      	// Stored values
+      	CASE rccStoredValue
+      		// Returns the result of the search
+      		RESULT LooperSeek(sColumnName + RollLOOPName + AttributeValue, vSearch, bIdentical, nStart)
+      		
+      	OTHER CASE
+      		RESULT -1
+      END
+     type : 458752
+   -
+     name : __RowFromRadioButton
+     internal_properties : CAAAAAgAAADos4BYxSrTpI1M8eXvLU0TfQP6nVQvLfii1DL4XuJ6SlsA/hlHW8Xmi38hoxHMiCb8LsPP5OPU3yiXpvrSUz8JalQ6BGjp6vlVMTtqgDyk5D91xHjVdfdL5x0lGmEDsagHhD983gxC0JS8u+JwFzW4ou2/VUYVE3No0CIuoQXd//p4
+     procedure_id : 1632033584846354219
+     type_code : 14
+     code : |1-
+      // Summary: Returns the row below the radio button
+      // Syntax:
+      //[ <Result> = ] __RowFromRadioButton (<sColumn> is string)
+      //
+      // Parameters:
+      //	sColumn (string): Name of the column
+      // Return value:
+      // 	integer: Row number below the radio button
+      //
+      PROCEDURE PRIVATE __RowFromRadioButton(LOCAL sColumn is string)
+      
+      sColumnName is string
+      nX, nY		are int
+      nRow		is int
+      
+      // Column not found
+      IF MyColumns[sColumn]..Empty THEN
+      	RESULT -1
+      END
+      
+      // Retrieves the internal name of the column
+      sColumnName = MyColumns[sColumn]
+      
+      // Center of the looper
+      nX = {sColumnName + RollLOOPName, indControl}..Width / 2
+      
+      // Coordinate of the radio button in relation to the looper
+      nY = ({sColumnName + RollLOOPName, indControl}..LineHeight * 2 + 6) - ({sColumnName + RollLOOPName, indControl}..Y - SC_CONTAINER..Y) + {sColumnName + RollLOOPName, indControl}..LineHeight / 2
+      
+      // Selected row
+      nRow = LooperInfoXY(sColumnName + RollLOOPName, liLineNumber, nX, nY)
+      
+      RESULT nRow
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : MDLC_SansNom1
+resources :
+ string_res :
+  identifier : 0x1e71c36e09e53ea8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
